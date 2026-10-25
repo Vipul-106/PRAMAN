@@ -87,7 +87,7 @@ export function AuditTrailDrawer({ event, isOpen, onClose }: AuditTrailDrawerPro
           </div>
 
           {/* Details */}
-          <div className="gov-card p-4 rounded-xl border border-white/10 space-y-2 bg-slate-900/60">
+          <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-2">
             <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
               Event Details & Rationale
             </span>

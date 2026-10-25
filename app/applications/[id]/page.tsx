@@ -58,7 +58,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
   if (!application) {
     return (
       <AppShell>
-        <div className="gov-card p-12 text-center rounded-xl border border-white/10 space-y-4 max-w-xl mx-auto my-12">
+        <div className="glass-card p-12 text-center rounded-xl transition-all duration-200 space-y-4 max-w-xl mx-auto my-12">
           <ShieldAlert className="w-12 h-12 text-amber-400 mx-auto" />
           <h2 className="text-lg font-bold text-white">Application Case Not Found</h2>
           <p className="text-xs text-slate-400">
@@ -137,7 +137,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
       />
 
       {/* Case Workflow Stages Timeline */}
-      <div className="gov-card p-4 rounded-xl border border-white/10 mb-6">
+      <div className="glass-card p-4 rounded-xl transition-all duration-200 mb-6">
         <div className="flex items-center justify-between text-xs text-slate-400 mb-2">
           <span className="font-semibold text-slate-200">Regulatory Triage Stages</span>
           <span className="text-blue-400 font-mono text-[11px]">AICTE Automated Scrutiny Pipeline</span>
@@ -194,7 +194,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Institutional Profile */}
           <div className="lg:col-span-2 space-y-6">
-            <div className="gov-card p-5 rounded-xl border border-white/10 space-y-4">
+            <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-4">
               <h3 className="text-sm font-bold text-white flex items-center gap-2">
                 <Building2 className="w-4 h-4 text-blue-400" />
                 <span>Institutional Profile & Registration</span>
@@ -228,7 +228,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
             </div>
 
             {/* Submitted Programmes */}
-            <div className="gov-card p-5 rounded-xl border border-white/10 space-y-3">
+            <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-3">
               <h3 className="text-sm font-bold text-white">Submitted Programmes for Approval</h3>
               <div className="divide-y divide-white/5">
                 {application.programmes.map((p, idx) => (
@@ -249,7 +249,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
 
           {/* Right Column: High-Priority Findings & Action Box */}
           <div className="space-y-6">
-            <div className="gov-card p-5 rounded-xl border border-white/10 space-y-4">
+            <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-sm font-bold text-white flex items-center gap-2">
                   <AlertTriangle className="w-4 h-4 text-rose-400" />
@@ -296,7 +296,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
             </div>
 
             {/* Quick Officer Triage Box */}
-            <div className="gov-card p-5 rounded-xl border border-blue-500/30 bg-blue-950/20 space-y-3 text-xs">
+            <div className="glass-card p-5 rounded-xl transition-all duration-200 border border-blue-500/30 bg-blue-950/20 space-y-3 text-xs">
               <span className="text-xs font-bold text-white block">Officer Decision Guardrail</span>
               <p className="text-slate-300 leading-relaxed text-[11.5px]">
                 Preliminary scrutiny requires logging acknowledgement, clarification request, dismissal with reason,
@@ -344,7 +344,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
       {/* 3. Findings Tab */}
       {activeTab === 'findings' && (
         <div className="space-y-4">
-          <div className="gov-card p-4 rounded-xl border border-white/10 flex items-center justify-between">
+          <div className="glass-card p-4 rounded-xl transition-all duration-200 flex items-center justify-between">
             <div>
               <h3 className="text-sm font-bold text-white">Rule Validation Discrepancies</h3>
               <p className="text-xs text-slate-400 mt-0.5">
@@ -395,7 +395,7 @@ function CaseWorkspaceContent({ params }: CaseWorkspacePageProps) {
 
       {/* 7. Officer Action History Tab */}
       {activeTab === 'history' && (
-        <div className="gov-card p-5 rounded-xl border border-white/10 space-y-4">
+        <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-4">
           <div className="flex items-center justify-between pb-3 border-b border-white/10">
             <div>
               <h3 className="text-sm font-bold text-white flex items-center gap-2">

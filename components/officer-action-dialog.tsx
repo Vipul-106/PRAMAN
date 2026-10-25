@@ -77,7 +77,7 @@ export function OfficerActionDialog({
       onClick={onClose}
     >
       <div
-        className="gov-card w-full max-w-lg rounded-2xl border border-white/20 bg-slate-950 text-slate-100 shadow-2xl overflow-hidden"
+        className="glass-card w-full max-w-lg rounded-xl transition-all duration-200 text-slate-100 shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -262,7 +262,7 @@ export function OfficerActionDialog({
               value={note}
               onChange={(e) => setNote(e.target.value)}
               placeholder="Internal file remarks for peer reviewers..."
-              className="w-full bg-slate-900 border border-white/15 text-white rounded-lg p-2 text-xs focus:outline-none focus:border-blue-500"
+              className="glass-input w-full rounded-lg px-3 py-2 text-sm"
             />
           </div>
 

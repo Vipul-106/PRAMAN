@@ -63,7 +63,7 @@ export function MetricCard({
 
   return (
     <div
-      className={`gov-card p-5 rounded-xl transition-all duration-200 ${styles.glow} ${className}`}
+      className={`glass-card p-5 rounded-xl transition-all duration-200 ${styles.glow} ${className}`}
     >
       <div className="flex items-start justify-between">
         <div className="space-y-1">

@@ -88,7 +88,7 @@ export function ApplicationTable({ applications, initialSearch = '' }: Applicati
   return (
     <div className="space-y-4">
       {/* Search & Filter Toolbar */}
-      <div className="gov-card p-4 rounded-xl border border-white/10 space-y-4">
+      <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           {/* Search box */}
           <div className="relative flex-1 max-w-md">
@@ -98,7 +98,7 @@ export function ApplicationTable({ applications, initialSearch = '' }: Applicati
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search reference, institution, code, region..."
-              className="w-full bg-slate-900 border border-white/10 text-xs text-white rounded-lg pl-9 pr-3 py-2 focus:outline-none focus:border-blue-500"
+              className="glass-input w-full rounded-lg px-3 py-2 text-sm pl-9 pr-3"
             />
           </div>
 
@@ -110,7 +110,7 @@ export function ApplicationTable({ applications, initialSearch = '' }: Applicati
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="bg-slate-900 border border-white/10 text-xs text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-blue-500"
+                className="glass-input rounded-lg px-3 py-2 text-sm"
               >
                 <option value="ALL">All Categories</option>
                 <option value="EoA">Extension of Approval (EoA)</option>
@@ -125,7 +125,7 @@ export function ApplicationTable({ applications, initialSearch = '' }: Applicati
               <select
                 value={selectedStatus}
                 onChange={(e) => setSelectedStatus(e.target.value)}
-                className="bg-slate-900 border border-white/10 text-xs text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-blue-500"
+                className="glass-input rounded-lg px-3 py-2 text-sm"
               >
                 <option value="ALL">All Statuses</option>
                 <option value="Ready for review">Ready for review</option>
@@ -142,7 +142,7 @@ export function ApplicationTable({ applications, initialSearch = '' }: Applicati
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'priority' | 'date')}
-                className="bg-slate-900 border border-white/10 text-xs text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-blue-500"
+                className="glass-input rounded-lg px-3 py-2 text-sm"
               >
                 <option value="priority">Priority Score (High &rarr; Low)</option>
                 <option value="date">Submission Date (Newest)</option>
@@ -175,7 +175,7 @@ export function ApplicationTable({ applications, initialSearch = '' }: Applicati
       </div>
 
       {/* Main Table Container */}
-      <div className="gov-card rounded-xl border border-white/10 overflow-hidden shadow-xl">
+      <div className="glass-card rounded-xl transition-all duration-200 overflow-hidden shadow-xl">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs">
             <thead className="bg-slate-950/80 text-slate-400 border-b border-white/10 text-[11px] uppercase font-semibold tracking-wider">
@@ -274,7 +274,7 @@ export function ApplicationTable({ applications, initialSearch = '' }: Applicati
                       {/* Workflow Status */}
                       <td className="py-3.5 px-4 whitespace-nowrap">
                         <span
-                          className={`inline-block px-2.5 py-0.5 rounded-full text-[11px] font-semibold border ${getStatusBadge(
+                          className={`tan-badge inline-block rounded-md px-2.5 py-0.5 text-xs font-semibold ${getStatusBadge(
                             app.status
                           )}`}
                         >

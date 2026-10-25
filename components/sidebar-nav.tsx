@@ -81,7 +81,7 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
   ];
 
   return (
-    <aside className="w-64 bg-slate-950/80 backdrop-blur-xl border-r border-slate-800/80 flex flex-col h-full shrink-0">
+    <aside className="w-64 bg-[#0b2226]/90 backdrop-blur-xl border-r border-[#2d545e] flex flex-col h-full shrink-0">
       {/* Brand Header */}
       <div className="p-5 border-b border-slate-800/80 bg-slate-900/25">
         <Link href="/" className="block group">

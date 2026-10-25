@@ -93,7 +93,7 @@ export function RuleEditor({ currentRole }: RuleEditorProps) {
       </div>
 
       {/* Control Actions Bar */}
-      <div className="gov-card p-4 rounded-xl border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="glass-card p-4 rounded-xl transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <span className="text-xs text-slate-400 font-semibold">
             Configured Rules: <strong className="text-white">{localRules.length}</strong>
@@ -145,7 +145,7 @@ export function RuleEditor({ currentRole }: RuleEditorProps) {
 
       {/* Dry Run Simulation Impact Report */}
       {dryRunResult && (
-        <div className="gov-card p-5 rounded-xl border border-blue-500/40 bg-blue-950/20 space-y-4">
+        <div className="glass-card p-5 rounded-xl transition-all duration-200 border border-blue-500/40 bg-blue-950/20 space-y-4">
           <div className="flex items-center justify-between pb-3 border-b border-blue-500/20">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-400 animate-pulse" />

@@ -32,7 +32,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="relative min-h-full flex flex-col bg-slate-950 text-slate-100">
-        <PrismGradient speed={0.35} noise={{ opacity: 0.15 }} className="fixed inset-0 z-0 opacity-25 pointer-events-none" />
+        <PrismGradient speed={0.25} noise={{ opacity: 0.1 }} className="fixed inset-0 z-0 opacity-40 pointer-events-none" />
         <CursorTrail color="bg-cyan-500/50" count={5} size={6} />
         <SessionProvider>{children}</SessionProvider>
       </body>

@@ -33,7 +33,7 @@ export function DocumentPreview({
   const pageFields = document.extractedFields.filter((f) => (f.page || 1) === currentPage);
 
   return (
-    <div className="gov-card rounded-xl border border-white/10 flex flex-col h-full overflow-hidden bg-slate-950">
+    <div className="glass-card rounded-xl transition-all duration-200 flex flex-col h-full overflow-hidden">
       {/* Document Viewer Header Toolbar */}
       <div className="p-3 border-b border-white/10 bg-slate-900/90 flex items-center justify-between gap-3 text-xs">
         <div className="flex items-center gap-2 min-w-0">

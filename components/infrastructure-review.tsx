@@ -56,7 +56,7 @@ export function InfrastructureReview({ checks }: InfrastructureReviewProps) {
 
       {/* Aggregate Overview Metrics */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="gov-card p-4 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-1">
           <span className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
             Total Infrastructure Checks
           </span>
@@ -64,7 +64,7 @@ export function InfrastructureReview({ checks }: InfrastructureReviewProps) {
           <span className="text-[11px] text-slate-500">Photographs, Blueprints & Surveys</span>
         </div>
 
-        <div className="gov-card p-4 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-1">
           <span className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
             Clearance Conforming
           </span>
@@ -74,7 +74,7 @@ export function InfrastructureReview({ checks }: InfrastructureReviewProps) {
           <span className="text-[11px] text-slate-500">Dimensions & Geotags match norms</span>
         </div>
 
-        <div className="gov-card p-4 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-1">
           <span className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
             Recommend Physical Inspection
           </span>
@@ -117,7 +117,7 @@ export function InfrastructureReview({ checks }: InfrastructureReviewProps) {
           return (
             <div
               key={item.id}
-              className="gov-card p-5 rounded-xl border border-white/10 space-y-3.5 bg-slate-900/80 transition-all hover:border-white/20"
+              className="glass-card p-5 rounded-xl transition-all duration-200 space-y-3.5"
             >
               <div className="flex items-start justify-between gap-2">
                 <div className="space-y-0.5">

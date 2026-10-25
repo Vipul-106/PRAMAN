@@ -30,12 +30,12 @@ export function AlertsStrip({ alerts }: AlertsStripProps) {
 
   const getAlertStyle = (severity: SystemAlert['severity']) => {
     if (severity === 'critical') {
-      return 'bg-rose-950/40 border-rose-500/30 text-rose-200';
+      return 'bg-red-950/40 border border-red-800/60 text-red-200';
     }
     if (severity === 'high') {
-      return 'bg-rose-950/20 border-rose-500/20 text-rose-300';
+      return 'bg-[#c89666]/15 border border-[#c89666]/50 text-[#e1b382]';
     }
-    return 'bg-amber-950/20 border-amber-500/20 text-amber-200';
+    return 'bg-[#c89666]/15 border border-[#c89666]/50 text-[#e1b382]';
   };
 
   return (

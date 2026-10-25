@@ -141,7 +141,7 @@ export default function AuditPage() {
       )}
 
       {/* Filter and Search Bar */}
-      <div className="gov-card p-4 rounded-xl border border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="glass-card p-4 rounded-xl transition-all duration-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="relative flex-1 max-w-sm">
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
@@ -149,7 +149,7 @@ export default function AuditPage() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search action, actor, details, application..."
-            className="w-full bg-slate-900 border border-white/10 text-xs text-white rounded-lg pl-9 pr-3 py-2 focus:outline-none focus:border-blue-500"
+            className="glass-input w-full rounded-lg px-3 py-2 text-sm pl-9 pr-3"
           />
         </div>
 
@@ -158,7 +158,7 @@ export default function AuditPage() {
           <select
             value={selectedRole}
             onChange={(e) => setSelectedRole(e.target.value)}
-            className="bg-slate-900 border border-white/10 text-xs text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-blue-500"
+            className="glass-input rounded-lg px-3 py-2 text-sm"
           >
             <option value="ALL">All Roles</option>
             <option value="Officer">Officer</option>
@@ -174,7 +174,7 @@ export default function AuditPage() {
           <div
             key={event.id}
             onClick={() => handleOpenEvent(event)}
-            className="gov-card p-4 rounded-xl border border-white/10 space-y-2 hover:border-blue-500/50 hover:bg-slate-900/90 transition-all text-xs cursor-pointer group"
+            className="glass-card p-4 rounded-xl transition-all duration-200 space-y-2 text-xs cursor-pointer group"
           >
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div className="flex items-center gap-2">

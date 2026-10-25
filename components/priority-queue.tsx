@@ -44,7 +44,7 @@ export function PriorityQueue({ applications, limit }: PriorityQueueProps) {
   };
 
   return (
-    <div className="gov-card rounded-xl border border-white/10 overflow-hidden">
+    <div className="glass-card rounded-xl transition-all duration-200 overflow-hidden">
       <div className="p-4 border-b border-white/10 flex items-center justify-between">
         <div>
           <h3 className="text-sm font-bold text-white flex items-center gap-2">

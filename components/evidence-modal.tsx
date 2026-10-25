@@ -33,7 +33,7 @@ export function EvidenceModal({
       onClick={onClose}
     >
       <div
-        className="gov-card w-full max-w-2xl rounded-2xl border border-white/20 bg-slate-950 text-slate-100 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
+        className="glass-card w-full max-w-2xl rounded-xl transition-all duration-200 text-slate-100 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
@@ -100,7 +100,7 @@ export function EvidenceModal({
           </div>
 
           {/* Reason & Detailed Flag Analysis */}
-          <div className="gov-card p-4 rounded-xl border border-white/10 space-y-2 bg-slate-900/50">
+          <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-2">
             <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
               Why This Was Flagged
             </span>

@@ -224,7 +224,7 @@ export function IntakePipeline() {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
       {/* Category & Checklist Panel */}
       <div className="lg:col-span-4 space-y-6">
-        <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800 hover:border-cyan-500/40 rounded-xl text-slate-100 shadow-xl">
+        <Card className="glass-card rounded-xl transition-all duration-200 text-slate-100">
           <CardHeader className="pb-3">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
               <Layers className="h-4 w-4 text-blue-400" />
@@ -252,7 +252,7 @@ export function IntakePipeline() {
         </Card>
 
         {/* Dynamic Statutory Checklist */}
-        <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
+        <Card className="glass-card rounded-xl transition-all duration-200 text-slate-100">
           <CardHeader className="pb-3">
             <div className="flex items-center justify-between">
               <CardTitle className="text-base font-semibold">Mandatory Statutory Checklist</CardTitle>
@@ -300,7 +300,7 @@ export function IntakePipeline() {
 
       {/* Upload & Extraction Pipeline */}
       <div className="lg:col-span-8 space-y-6">
-        <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
+        <Card className="glass-card rounded-xl transition-all duration-200 text-slate-100">
           <CardHeader className="flex flex-row items-center justify-between pb-3">
             <div>
               <CardTitle className="text-base font-semibold">Document Intake & Extraction</CardTitle>
@@ -408,7 +408,7 @@ export function IntakePipeline() {
         {uploadedFiles.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* File List */}
-            <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
+            <Card className="glass-card rounded-xl transition-all duration-200 text-slate-100">
               <CardHeader className="pb-3">
                 <CardTitle className="text-sm font-semibold">Processed Documents ({uploadedFiles.length})</CardTitle>
               </CardHeader>
@@ -443,7 +443,7 @@ export function IntakePipeline() {
             </Card>
 
             {/* Extracted Fields Drawer & Rectification Diff */}
-            <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
+            <Card className="glass-card rounded-xl transition-all duration-200 text-slate-100">
               <CardHeader className="pb-3 flex flex-row items-center justify-between">
                 <div>
                   <CardTitle className="text-sm font-semibold">Extracted Key Fields</CardTitle>
@@ -503,7 +503,7 @@ export function IntakePipeline() {
                               type="text"
                               value={editValue}
                               onChange={(e) => setEditValue(e.target.value)}
-                              className="w-full bg-slate-900 border border-blue-500 text-white rounded p-1.5 text-xs font-mono focus:outline-none"
+                              className="glass-input w-full rounded-lg px-3 py-2 text-sm font-mono"
                             />
                             <div className="flex justify-end gap-1.5">
                               <button

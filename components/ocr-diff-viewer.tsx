@@ -116,7 +116,7 @@ export function OCRDiffViewer({
       </div>
 
       {/* Right 6 Columns: Institutional Record Comparison & Diff Analysis */}
-      <div className="lg:col-span-6 flex flex-col h-[720px] gov-card rounded-xl border border-white/10 overflow-hidden bg-slate-950">
+      <div className="lg:col-span-6 flex flex-col h-[720px] glass-card rounded-xl transition-all duration-200 overflow-hidden">
         {/* Header */}
         <div className="p-3 border-b border-white/10 bg-slate-900/90 flex items-center justify-between">
           <div className="flex items-center gap-2">

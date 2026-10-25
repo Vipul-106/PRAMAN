@@ -31,8 +31,8 @@ export interface PrismGradientProps {
 }
 
 const PRISM = {
-  dark: ["#020617", "#0f172a", "#1e293b"],
-  light: ["#FAFAFA", "#334155", "#020617"],
+  dark: ["#12343b", "#2d545e", "#c89666"],
+  light: ["#e1b382", "#2d545e", "#12343b"],
   rotation: -50,
   proportion: 1,
   scale: 0.01,
@@ -227,7 +227,7 @@ export function PrismGradient({
       style={{ borderRadius: radius, ...style }}
     >
       {webglFailed ? (
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_55%_45%,#0f172a_0%,#020617_60%,#000000_100%)] dark:bg-[radial-gradient(circle_at_55%_45%,#0f172a_0%,#020617_60%,#000000_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_55%_45%,#2d545e_0%,#12343b_60%,#0e272d_100%)] dark:bg-[radial-gradient(circle_at_55%_45%,#2d545e_0%,#12343b_60%,#0e272d_100%)]" />
       ) : (
         <canvas ref={canvasRef} className="block size-full" />
       )}

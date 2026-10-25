@@ -63,7 +63,7 @@ export default function OverviewPage() {
           <div className="flex items-center gap-2">
             <Link
               href="/intake"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-950/50 ring-1 ring-blue-400/20 transition-colors"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#e1b382] text-[#12343b] hover:bg-[#c89666] text-xs font-semibold shadow-lg shadow-black/20 transition-colors"
             >
               <FileCheck2 className="w-3.5 h-3.5" />
               <span>Smart Intake</span>
@@ -131,7 +131,7 @@ export default function OverviewPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
               href="/intake"
-              className="gov-card p-4 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 border-l-2 border-l-blue-500/60 hover:border-slate-700/80 hover:border-l-blue-400 transition-colors group block"
+              className="glass-card p-4 rounded-xl transition-all duration-200 border-l-2 border-l-blue-500/60 hover:border-l-blue-400 group block"
             >
               <div className="flex items-center justify-between mb-2">
                 <FileCheck2 className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform" />
@@ -145,7 +145,7 @@ export default function OverviewPage() {
 
             <Link
               href="/verification"
-              className="gov-card p-4 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 border-l-2 border-l-emerald-500/60 hover:border-slate-700/80 hover:border-l-emerald-400 transition-colors group block"
+              className="glass-card p-4 rounded-xl transition-all duration-200 border-l-2 border-l-emerald-500/60 hover:border-l-emerald-400 group block"
             >
               <div className="flex items-center justify-between mb-2">
                 <CheckCircle2 className="w-5 h-5 text-indigo-400 group-hover:scale-110 transition-transform" />
@@ -159,7 +159,7 @@ export default function OverviewPage() {
 
             <Link
               href="/rules"
-              className="gov-card p-4 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 border-l-2 border-l-amber-500/60 hover:border-slate-700/80 hover:border-l-amber-400 transition-colors group block"
+              className="glass-card p-4 rounded-xl transition-all duration-200 border-l-2 border-l-amber-500/60 hover:border-l-amber-400 group block"
             >
               <div className="flex items-center justify-between mb-2">
                 <ShieldCheck className="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform" />
@@ -176,7 +176,7 @@ export default function OverviewPage() {
         {/* Right Col: Verification Status Breakdown & Recent Audit Feed */}
         <div className="space-y-6">
           {/* Verification Status Distribution */}
-          <div className="gov-card p-5 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 hover:border-slate-700/80 space-y-4 transition-colors">
+          <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-slate-300">
@@ -227,7 +227,7 @@ export default function OverviewPage() {
           </div>
 
           {/* Recent Cryptographic Audit Activity */}
-          <div className="gov-card p-5 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 hover:border-slate-700/80 space-y-3 transition-colors">
+          <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-3">
             <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
               <div className="flex items-center gap-2">
                 <History className="w-4 h-4 text-blue-400" />

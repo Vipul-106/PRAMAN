@@ -42,7 +42,7 @@ export function AnomalyViewer({ document, institutionName }: AnomalyViewerProps)
       </div>
 
       {anomalies.length === 0 && !document.metadata?.hasEditTraces ? (
-        <div className="gov-card p-8 rounded-xl border border-white/10 text-center space-y-3">
+        <div className="glass-card p-8 rounded-xl transition-all duration-200 text-center space-y-3">
           <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto" />
           <h4 className="text-sm font-bold text-white">No Advisory Anomalies Detected</h4>
           <p className="text-xs text-slate-400 max-w-md mx-auto">
@@ -122,7 +122,7 @@ export function AnomalyViewer({ document, institutionName }: AnomalyViewerProps)
           </div>
 
           {/* Right Column: Detailed Forensic Simulator Display */}
-          <div className="lg:col-span-7 gov-card rounded-xl border border-white/10 p-5 space-y-4 bg-slate-950">
+          <div className="lg:col-span-7 glass-card rounded-xl transition-all duration-200 p-5 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-white/10">
               <h4 className="text-sm font-bold text-white flex items-center gap-2">
                 <ZoomIn className="w-4 h-4 text-blue-400" />

@@ -41,7 +41,7 @@ export function StatusBadge({ status, showIcon = true, className = '' }: StatusB
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border ${colors.bg} ${colors.text} ${colors.border} ${className}`}
+      className={`tan-badge inline-flex items-center gap-1.5 rounded-md px-2.5 py-0.5 text-xs font-semibold ${colors.bg} ${colors.text} ${colors.border} ${className}`}
     >
       <span className={`w-1.5 h-1.5 rounded-full ${colors.dot}`} />
       {showIcon && renderIcon()}
@@ -54,7 +54,7 @@ export function SeverityBadge({ severity }: { severity: Severity }) {
   const colors = getSeverityColor(severity);
   return (
     <span
-      className={`inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold tracking-wide uppercase border ${colors.bg} ${colors.text} ${colors.border}`}
+      className={`tan-badge inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold tracking-wide uppercase ${colors.bg} ${colors.text} ${colors.border}`}
     >
       {severity}
     </span>
@@ -65,7 +65,7 @@ export function CategoryBadge({ category }: { category: ApplicationCategory }) {
   const style = getCategoryBadgeStyle(category);
   return (
     <span
-      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border ${style}`}
+      className={`tan-badge inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold ${style}`}
     >
       {category}
     </span>

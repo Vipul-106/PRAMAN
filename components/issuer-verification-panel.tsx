@@ -65,7 +65,7 @@ export function IssuerVerificationPanel({ events }: IssuerVerificationPanelProps
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="gov-card p-4 rounded-xl border border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="glass-card p-4 rounded-xl transition-all duration-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="relative flex-1 max-w-md">
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
@@ -73,7 +73,7 @@ export function IssuerVerificationPanel({ events }: IssuerVerificationPanelProps
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search authority, document, reference..."
-            className="w-full bg-slate-900 border border-white/10 text-xs text-white rounded-lg pl-9 pr-3 py-2 focus:outline-none focus:border-blue-500"
+            className="glass-input w-full rounded-lg px-3 py-2 text-sm pl-9 pr-3"
           />
         </div>
 
@@ -84,7 +84,7 @@ export function IssuerVerificationPanel({ events }: IssuerVerificationPanelProps
             <select
               value={selectedStatus}
               onChange={(e) => setSelectedStatus(e.target.value)}
-              className="bg-slate-900 border border-white/10 text-xs text-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-blue-500"
+              className="glass-input rounded-lg px-3 py-2 text-sm"
             >
               <option value="ALL">All 6 Statuses</option>
               <option value="verified">Verified</option>
@@ -113,7 +113,7 @@ export function IssuerVerificationPanel({ events }: IssuerVerificationPanelProps
           return (
             <div
               key={evt.id}
-              className="gov-card p-5 rounded-xl border border-white/10 space-y-3.5 transition-all hover:border-white/20 bg-slate-900/80"
+              className="glass-card p-5 rounded-xl transition-all duration-200 space-y-3.5"
             >
               <div className="flex items-start justify-between gap-2">
                 <div className="space-y-0.5">
@@ -158,7 +158,7 @@ export function IssuerVerificationPanel({ events }: IssuerVerificationPanelProps
                     value={manualNote}
                     onChange={(e) => setManualNote(e.target.value)}
                     placeholder="Enter scrutiny directive (e.g. Request physical attested copy)..."
-                    className="w-full bg-slate-900 border border-white/10 text-white rounded p-1.5 text-xs focus:outline-none focus:border-amber-500"
+                    className="glass-input w-full rounded-lg px-3 py-2 text-sm"
                   />
                   <div className="flex items-center justify-end gap-2 pt-1">
                     <button

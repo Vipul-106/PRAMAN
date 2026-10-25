@@ -59,7 +59,7 @@ export function TopBar({
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search application ref, college, region..."
-            className="w-full bg-slate-900/70 border border-slate-800 text-xs text-slate-200 placeholder-slate-500 rounded-lg pl-9 pr-3 py-2 focus:outline-none focus:border-blue-400/60 focus:ring-2 focus:ring-blue-500/20 transition-colors"
+            className="glass-input w-full rounded-lg px-3 py-2 text-sm pl-9 pr-3 placeholder-slate-500"
           />
         </form>
       </div>

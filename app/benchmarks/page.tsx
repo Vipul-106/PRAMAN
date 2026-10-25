@@ -82,7 +82,7 @@ export default function BenchmarksPage() {
 
       {/* Primary Metric Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="gov-card p-5 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-1">
           <div className="flex items-center justify-between">
             <span className="text-xs text-slate-400 uppercase font-semibold">OCR Field Extraction</span>
             <Cpu className="w-4 h-4 text-blue-400" />
@@ -91,7 +91,7 @@ export default function BenchmarksPage() {
           <p className="text-[11px] text-slate-400">Normalized field agreement on test fixtures</p>
         </div>
 
-        <div className="gov-card p-5 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-1">
           <div className="flex items-center justify-between">
             <span className="text-xs text-slate-400 uppercase font-semibold">Validation Rule Accuracy</span>
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
@@ -100,7 +100,7 @@ export default function BenchmarksPage() {
           <p className="text-[11px] text-slate-400">True positive/negative regulatory flags</p>
         </div>
 
-        <div className="gov-card p-5 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-1">
           <div className="flex items-center justify-between">
             <span className="text-xs text-slate-400 uppercase font-semibold">Anomaly Precision & Recall</span>
             <Activity className="w-4 h-4 text-violet-400" />
@@ -111,7 +111,7 @@ export default function BenchmarksPage() {
           <p className="text-[11px] text-slate-400">Precision / Recall on tamper indicators</p>
         </div>
 
-        <div className="gov-card p-5 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-5 rounded-xl transition-all duration-200 space-y-1">
           <div className="flex items-center justify-between">
             <span className="text-xs text-slate-400 uppercase font-semibold">Manual Effort Reduction</span>
             <TrendingDown className="w-4 h-4 text-emerald-400" />
@@ -123,17 +123,17 @@ export default function BenchmarksPage() {
 
       {/* Latency & Fixture Info */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="gov-card p-4 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-1">
           <span className="text-xs text-slate-400 font-semibold uppercase">Average Triage Latency</span>
           <p className="text-xl font-bold text-white">{metrics.avgVerificationTimeMs} ms</p>
           <span className="text-[11px] text-slate-400">End-to-end extraction & rule validation</span>
         </div>
-        <div className="gov-card p-4 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-1">
           <span className="text-xs text-slate-400 font-semibold uppercase">Alert Dispatch Latency</span>
           <p className="text-xl font-bold text-white">{metrics.alertLatencyMs} ms</p>
           <span className="text-[11px] text-slate-400">Queue indexing & triage score assignment</span>
         </div>
-        <div className="gov-card p-4 rounded-xl border border-white/10 space-y-1">
+        <div className="glass-card p-4 rounded-xl transition-all duration-200 space-y-1">
           <span className="text-xs text-slate-400 font-semibold uppercase">Test Sample Fixtures</span>
           <p className="text-xl font-bold text-white">{metrics.sampleSize} Cases ({metrics.testFixtureCount} Fixtures)</p>
           <span className="text-[11px] text-slate-400">Seeded institutional test harness</span>
@@ -141,7 +141,7 @@ export default function BenchmarksPage() {
       </div>
 
       {/* Category Breakdown Table */}
-      <div className="gov-card rounded-xl border border-white/10 overflow-hidden">
+      <div className="glass-card rounded-xl transition-all duration-200 overflow-hidden">
         <div className="p-4 border-b border-white/10">
           <h3 className="text-sm font-bold text-white">Performance by Application Category</h3>
           <p className="text-xs text-slate-400 mt-0.5">

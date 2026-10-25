@@ -35,10 +35,10 @@ export function RoleSwitcher({ currentRole, onRoleChange }: RoleSwitcherProps) {
           <button
             key={role}
             onClick={() => onRoleChange(role)}
-            className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-medium transition-all ${
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold transition-all ${
               isActive
-                ? 'bg-blue-600/30 text-white border border-blue-500/40 shadow-sm'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                ? 'bg-[#e1b382] text-[#12343b]'
+                : 'bg-[#1c3e45] text-[#e1b382] border border-[#2d545e] hover:bg-[#24505a]'
             }`}
             title={ROLE_CAPABILITIES[role].description}
           >
