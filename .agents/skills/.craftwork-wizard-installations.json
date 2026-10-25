@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "craftwork-assets": {
+      "agents": [
+        "codex",
+        "antigravity"
+      ],
+      "canonicalPath": "D:\\praman\\.agents\\skills\\craftwork-assets",
+      "paths": {
+        "codex": "D:\\praman\\.agents\\skills\\craftwork-assets",
+        "antigravity": "D:\\praman\\.agent\\skills\\craftwork-assets"
+      },
+      "modes": {
+        "codex": "symlink",
+        "antigravity": "symlink"
+      }
+    }
+  }
+}
