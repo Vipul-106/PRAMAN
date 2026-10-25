@@ -12,6 +12,7 @@ import {
   Info,
   Lock,
 } from 'lucide-react';
+import { ThreeDButton } from '@/components/ui/three-d-button';
 
 interface RuleEditorProps {
   currentRole: OfficerRole;
@@ -104,14 +105,14 @@ export function RuleEditor({ currentRole }: RuleEditorProps) {
         </div>
 
         <div className="flex items-center gap-2">
-          <button
+          <ThreeDButton
             onClick={handleExecuteDryRun}
             disabled={isDryRunning}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-md shadow-blue-600/20 transition-all disabled:opacity-50"
+            className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
           >
             <Play className={`w-3.5 h-3.5 ${isDryRunning ? 'animate-spin' : ''}`} />
             <span>Execute Dry Run</span>
-          </button>
+          </ThreeDButton>
 
           {isAdmin && (
             <>

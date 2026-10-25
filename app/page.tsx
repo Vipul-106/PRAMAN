@@ -28,6 +28,7 @@ import {
 } from 'lucide-react';
 import { VerificationStatus } from '@/lib/types';
 import { useSession } from '@/lib/session-context';
+import AIOrbFace from '@/components/ui/ai-orb-face';
 
 export default function OverviewPage() {
   const { applications, auditEvents } = useSession();
@@ -53,6 +54,7 @@ export default function OverviewPage() {
         description="Unified AICTE decision-support cockpit for automated intake verification, cross-registry validation, and tamper anomaly triage."
         badge={
           <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+            <AIOrbFace size={36} state="idle" colors={{ body: '#22d3ee', bodyEdge: '#cffafe', feature: '#083344' }} className="shrink-0" />
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             Decision Engine Active
           </span>
@@ -61,14 +63,14 @@ export default function OverviewPage() {
           <div className="flex items-center gap-2">
             <Link
               href="/intake"
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-md shadow-blue-600/20 transition-all"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-950/50 ring-1 ring-blue-400/20 transition-colors"
             >
               <FileCheck2 className="w-3.5 h-3.5" />
               <span>Smart Intake</span>
             </Link>
             <Link
               href="/benchmarks"
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold border border-white/10 transition-all"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700/80 transition-colors"
             >
               <Activity className="w-3.5 h-3.5" />
               <span>Benchmarks</span>
@@ -129,7 +131,7 @@ export default function OverviewPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
               href="/intake"
-              className="gov-card p-4 rounded-xl border border-white/10 hover:border-blue-500/40 transition-all group block"
+              className="gov-card p-4 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 border-l-2 border-l-blue-500/60 hover:border-slate-700/80 hover:border-l-blue-400 transition-colors group block"
             >
               <div className="flex items-center justify-between mb-2">
                 <FileCheck2 className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform" />
@@ -143,7 +145,7 @@ export default function OverviewPage() {
 
             <Link
               href="/verification"
-              className="gov-card p-4 rounded-xl border border-white/10 hover:border-indigo-500/40 transition-all group block"
+              className="gov-card p-4 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 border-l-2 border-l-emerald-500/60 hover:border-slate-700/80 hover:border-l-emerald-400 transition-colors group block"
             >
               <div className="flex items-center justify-between mb-2">
                 <CheckCircle2 className="w-5 h-5 text-indigo-400 group-hover:scale-110 transition-transform" />
@@ -157,7 +159,7 @@ export default function OverviewPage() {
 
             <Link
               href="/rules"
-              className="gov-card p-4 rounded-xl border border-white/10 hover:border-amber-500/40 transition-all group block"
+              className="gov-card p-4 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 border-l-2 border-l-amber-500/60 hover:border-slate-700/80 hover:border-l-amber-400 transition-colors group block"
             >
               <div className="flex items-center justify-between mb-2">
                 <ShieldCheck className="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform" />
@@ -174,8 +176,8 @@ export default function OverviewPage() {
         {/* Right Col: Verification Status Breakdown & Recent Audit Feed */}
         <div className="space-y-6">
           {/* Verification Status Distribution */}
-          <div className="gov-card p-5 rounded-xl border border-white/10 space-y-4">
-            <div className="flex items-center justify-between pb-3 border-b border-white/10">
+          <div className="gov-card p-5 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 hover:border-slate-700/80 space-y-4 transition-colors">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-slate-300">
                   Verification Status Distribution
@@ -225,8 +227,8 @@ export default function OverviewPage() {
           </div>
 
           {/* Recent Cryptographic Audit Activity */}
-          <div className="gov-card p-5 rounded-xl border border-white/10 space-y-3">
-            <div className="flex items-center justify-between pb-3 border-b border-white/10">
+          <div className="gov-card p-5 rounded-xl bg-slate-900/70 backdrop-blur-md border border-slate-800/80 hover:border-slate-700/80 space-y-3 transition-colors">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
               <div className="flex items-center gap-2">
                 <History className="w-4 h-4 text-blue-400" />
                 <h3 className="text-xs font-bold uppercase tracking-wider text-slate-300">
@@ -242,7 +244,7 @@ export default function OverviewPage() {
               {recentAuditEvents.map((evt) => (
                 <div
                   key={evt.id}
-                  className="p-2.5 rounded-lg bg-slate-900/60 border border-white/5 space-y-1.5 text-xs hover:border-white/15 transition-all"
+                  className="p-2.5 rounded-lg bg-slate-950/50 border border-slate-800/70 border-l-2 border-l-blue-500/40 space-y-1.5 text-xs hover:border-slate-700/80 transition-colors"
                 >
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-white">

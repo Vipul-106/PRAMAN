@@ -25,7 +25,7 @@ export function RoleSwitcher({ currentRole, onRoleChange }: RoleSwitcherProps) {
   };
 
   return (
-    <div className="flex items-center gap-1.5 p-1 bg-slate-900/80 border border-white/10 rounded-lg">
+    <div className="flex items-center gap-1.5 p-1 bg-slate-900/80 border border-slate-800 backdrop-blur-md rounded-lg">
       <span className="text-[11px] font-medium text-slate-400 px-2 uppercase tracking-wider hidden sm:inline-block">
         Demo Role:
       </span>

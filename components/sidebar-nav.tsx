@@ -81,9 +81,9 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
   ];
 
   return (
-    <aside className="w-64 bg-slate-950/90 border-r border-white/10 flex flex-col h-full shrink-0">
+    <aside className="w-64 bg-slate-950/80 backdrop-blur-xl border-r border-slate-800/80 flex flex-col h-full shrink-0">
       {/* Brand Header */}
-      <div className="p-5 border-b border-white/10">
+      <div className="p-5 border-b border-slate-800/80 bg-slate-900/25">
         <Link href="/" className="block group">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20 border border-blue-400/30">
@@ -111,7 +111,7 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
 
       {/* Navigation Links */}
       <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
-        <div className="px-3 pb-2 text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+        <div className="px-3 pb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
           Command Operations
         </div>
         {navItems.map((item) => {
@@ -126,10 +126,10 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
               key={item.href}
               href={item.href}
               onClick={onItemClick}
-              className={`flex items-center justify-between px-3 py-2.5 rounded-lg text-xs font-medium transition-all group ${
+              className={`flex items-center justify-between px-3 py-2.5 rounded-lg text-xs font-medium transition-colors duration-200 group ${
                 isActive
-                  ? 'bg-blue-600/20 text-blue-300 border border-blue-500/30 shadow-sm'
-                  : 'text-slate-400 hover:text-slate-100 hover:bg-white/5 border border-transparent'
+                  ? 'bg-blue-500/10 text-blue-200 border border-blue-400/20 shadow-sm shadow-blue-950/30'
+                  : 'text-slate-400 hover:text-slate-100 hover:bg-slate-900/80 border border-transparent'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -160,8 +160,8 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
 
       {/* Urgent Action Banner */}
       {actionRequiredCount > 0 && (
-        <div className="px-4 py-3 mx-3 mb-3 rounded-lg bg-rose-950/40 border border-rose-500/20">
-          <div className="flex items-center gap-2 text-rose-400 text-xs font-semibold">
+        <div className="px-4 py-3 mx-3 mb-3 rounded-lg bg-amber-500/[0.06] border border-amber-500/20">
+          <div className="flex items-center gap-2 text-amber-300 text-xs font-semibold">
             <AlertCircle className="w-3.5 h-3.5" />
             <span>{actionRequiredCount} Cases Need Triage</span>
           </div>
@@ -172,7 +172,7 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
       )}
 
       {/* Bottom Legal / Prototype Disclaimer */}
-      <div className="p-3.5 border-t border-white/10 bg-slate-950">
+      <div className="p-3.5 border-t border-slate-800/80 bg-slate-950">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-[11px] font-semibold text-slate-300">

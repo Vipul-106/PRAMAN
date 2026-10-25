@@ -18,6 +18,7 @@ import {
   RotateCcw,
   Eye,
 } from 'lucide-react';
+import { ThreeDButton } from '@/components/ui/three-d-button';
 
 export default function AuditPage() {
   const { auditEvents, simulateTamper, resetAuditChain } = useSession();
@@ -67,35 +68,35 @@ export default function AuditPage() {
         }
         actions={
           <div className="flex items-center gap-2">
-            <button
+            <ThreeDButton
               onClick={handleVerifyChain}
               disabled={isVerifying}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-md shadow-blue-600/20 transition-all disabled:opacity-50"
+              className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
             >
               <ShieldCheck className={`w-3.5 h-3.5 ${isVerifying ? 'animate-spin' : ''}`} />
               <span>{isVerifying ? 'Verifying Hashes...' : 'Verify Chain Integrity'}</span>
-            </button>
-            <button
+            </ThreeDButton>
+            <ThreeDButton
               onClick={() => {
                 simulateTamper();
                 setVerificationResult(null);
               }}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-rose-950/40 hover:bg-rose-900/60 text-rose-300 border border-rose-500/30 text-xs font-semibold transition-all"
+              className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-rose-900/80 text-rose-100 dark:bg-rose-900/80 dark:text-rose-100"
               title="Demonstrates detection of unauthorized payload modification"
             >
               <ShieldAlert className="w-3.5 h-3.5" />
               <span>Simulate Tamper Test</span>
-            </button>
-            <button
+            </ThreeDButton>
+            <ThreeDButton
               onClick={() => {
                 resetAuditChain();
                 setVerificationResult(null);
               }}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-white/10 text-xs font-semibold transition-all"
+              className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-slate-800 text-slate-200 dark:bg-slate-800 dark:text-slate-200"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Reset Chain</span>
-            </button>
+            </ThreeDButton>
           </div>
         }
       />

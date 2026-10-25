@@ -17,7 +17,7 @@ export function AppShell({ children }: AppShellProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-slate-950 text-slate-100 font-sans">
+    <div className="relative z-10 flex h-screen w-screen overflow-hidden bg-transparent text-slate-100 font-sans selection:bg-blue-500/30">
       {/* Desktop Persistent Left Sidebar */}
       <div className="hidden md:flex h-full shrink-0">
         <SidebarNav />
@@ -26,11 +26,11 @@ export function AppShell({ children }: AppShellProps) {
       {/* Mobile Drawer Overlay */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 md:hidden flex"
+          className="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 md:hidden flex"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div
-            className="w-72 h-full bg-slate-950 border-r border-white/10"
+            className="w-72 h-full bg-slate-950 border-r border-slate-800/80 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <SidebarNav onItemClick={() => setMobileMenuOpen(false)} />
@@ -48,16 +48,16 @@ export function AppShell({ children }: AppShellProps) {
         />
 
         {/* Dynamic Role Capability Banner */}
-        <div className="px-4 md:px-6 py-2 bg-slate-950/60 border-b border-white/5">
+        <div className="px-4 md:px-6 py-2 bg-slate-900/30 border-b border-slate-800/70">
           <RoleBanner role={currentRole} />
         </div>
 
         {/* Scrollable Main Viewport */}
-        <main className="flex-1 overflow-y-auto px-4 md:px-6 py-6 space-y-6">
+        <main className="flex-1 overflow-y-auto px-4 md:px-6 py-6 space-y-6 bg-[radial-gradient(ellipse_at_top,_rgba(30,64,175,0.08),_transparent_48%)]">
           {children}
 
           {/* Persistent Statutory Decision-Support Disclaimer Footer */}
-          <footer className="mt-12 pt-6 pb-6 border-t border-white/10 text-slate-400 text-xs space-y-2">
+          <footer className="mt-12 pt-6 pb-6 border-t border-slate-800/80 text-slate-400 text-xs space-y-2">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-blue-400 shrink-0" />
@@ -73,7 +73,7 @@ export function AppShell({ children }: AppShellProps) {
               </span>
             </div>
 
-            <div className="p-3 rounded-lg bg-slate-900/40 border border-white/5 text-[11px] text-slate-400 leading-relaxed flex items-start gap-2.5">
+            <div className="p-3 rounded-lg bg-slate-900/60 backdrop-blur-md border border-slate-800/80 text-[11px] text-slate-400 leading-relaxed flex items-start gap-2.5">
               <Info className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
               <div>
                 <p>

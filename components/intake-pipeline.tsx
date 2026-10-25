@@ -4,6 +4,8 @@ import React, { useState, useRef } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { ThreeDButton } from '@/components/ui/three-d-button';
+import AIOrbFace from '@/components/ui/ai-orb-face';
 import { ApplicationCategory } from '@/lib/types';
 import {
   Upload,
@@ -222,7 +224,7 @@ export function IntakePipeline() {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
       {/* Category & Checklist Panel */}
       <div className="lg:col-span-4 space-y-6">
-        <Card className="bg-slate-900 border-slate-800 text-slate-100 shadow-xl">
+        <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800 hover:border-cyan-500/40 rounded-xl text-slate-100 shadow-xl">
           <CardHeader className="pb-3">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
               <Layers className="h-4 w-4 text-blue-400" />
@@ -237,8 +239,8 @@ export function IntakePipeline() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`w-full text-left px-4 py-3 rounded-lg border transition-all flex items-center justify-between ${
                     selectedCategory === cat
-                      ? 'bg-blue-950/60 border-blue-500 text-blue-100 font-medium'
-                      : 'bg-slate-950/40 border-slate-800 text-slate-400 hover:border-slate-700 hover:text-slate-200'
+                      ? 'bg-blue-950/60 border-blue-500 text-blue-100 font-medium backdrop-blur-md'
+                      : 'bg-slate-900/70 backdrop-blur-md border-slate-800 text-slate-400 hover:border-cyan-500/40 hover:text-slate-200'
                   }`}
                 >
                   <span className="text-xs font-semibold">{cat}</span>
@@ -250,7 +252,7 @@ export function IntakePipeline() {
         </Card>
 
         {/* Dynamic Statutory Checklist */}
-        <Card className="bg-slate-900 border-slate-800 text-slate-100 shadow-xl">
+        <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
           <CardHeader className="pb-3">
             <div className="flex items-center justify-between">
               <CardTitle className="text-base font-semibold">Mandatory Statutory Checklist</CardTitle>
@@ -298,7 +300,7 @@ export function IntakePipeline() {
 
       {/* Upload & Extraction Pipeline */}
       <div className="lg:col-span-8 space-y-6">
-        <Card className="bg-slate-900 border-slate-800 text-slate-100 shadow-xl">
+        <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
           <CardHeader className="flex flex-row items-center justify-between pb-3">
             <div>
               <CardTitle className="text-base font-semibold">Document Intake & Extraction</CardTitle>
@@ -306,11 +308,11 @@ export function IntakePipeline() {
                 Local in-memory file simulation. OCR field extraction with confidence parsing.
               </CardDescription>
             </div>
-            <Button
+            <AIOrbFace size={88} state={isProcessing ? "thinking" : "done"} colors={{ body: '#22d3ee', bodyEdge: '#cffafe', feature: '#083344' }} className="shrink-0" />
+            <ThreeDButton
               onClick={handleLoadSamplePack}
               disabled={isProcessing}
-              size="sm"
-              className="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs gap-2"
+              className="min-w-0 text-xs px-4 py-1.5 gap-2 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
             >
               {isProcessing ? (
                 <RefreshCw className="h-3.5 w-3.5 animate-spin" />
@@ -318,7 +320,7 @@ export function IntakePipeline() {
                 <Upload className="h-3.5 w-3.5" />
               )}
               Load Sample Pack
-            </Button>
+            </ThreeDButton>
           </CardHeader>
           <CardContent className="space-y-4">
             <input
@@ -406,7 +408,7 @@ export function IntakePipeline() {
         {uploadedFiles.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* File List */}
-            <Card className="bg-slate-900 border-slate-800 text-slate-100 shadow-xl">
+            <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
               <CardHeader className="pb-3">
                 <CardTitle className="text-sm font-semibold">Processed Documents ({uploadedFiles.length})</CardTitle>
               </CardHeader>
@@ -441,7 +443,7 @@ export function IntakePipeline() {
             </Card>
 
             {/* Extracted Fields Drawer & Rectification Diff */}
-            <Card className="bg-slate-900 border-slate-800 text-slate-100 shadow-xl">
+            <Card className="bg-slate-900/70 backdrop-blur-md border border-slate-800/80 text-slate-100 shadow-xl">
               <CardHeader className="pb-3 flex flex-row items-center justify-between">
                 <div>
                   <CardTitle className="text-sm font-semibold">Extracted Key Fields</CardTitle>

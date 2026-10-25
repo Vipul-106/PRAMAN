@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 
 import { useSession } from '@/lib/session-context';
+import { ThreeDButton } from '@/components/ui/three-d-button';
 
 export default function BenchmarksPage() {
   const [metrics, setMetrics] = useState<BenchmarkMetrics>(getBenchmarkMetrics());
@@ -52,14 +53,14 @@ export default function BenchmarksPage() {
         description="Controlled synthetic benchmark runs evaluating OCR extraction accuracy, rule fidelity, anomaly precision/recall, and latency across test fixtures."
         breadcrumbs={[{ label: 'Benchmarks' }]}
         actions={
-          <button
+          <ThreeDButton
             onClick={handleRunBenchmark}
             disabled={isRunning}
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-md shadow-blue-600/20 transition-all disabled:opacity-50"
+            className="min-w-0 text-xs px-4 py-1.5 gap-1.5 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
           >
             <Play className={`w-3.5 h-3.5 ${isRunning ? 'animate-spin' : ''}`} />
             <span>{isRunning ? 'Executing Test Batch...' : 'Run Synthetic Benchmark'}</span>
-          </button>
+          </ThreeDButton>
         }
       />
 
