@@ -1,0 +1,1550 @@
+{
+  "dataMode": "SYNTHETIC DEMO DATA",
+  "generatedAt": "2026-10-25T09:00:00+05:30",
+  "institutions": [
+    {
+      "id": "SYN-INST-101",
+      "name": "Aryavart Institute of Advanced Technology",
+      "code": "AIAT-101",
+      "region": "Northern",
+      "state": "Uttar Pradesh",
+      "type": "Private-Self-Financing",
+      "approvedIntake": 420,
+      "programmes": [
+        { "name": "B.Tech Computer Science & Engineering", "level": "UG", "currentApprovedIntake": 180, "requestedIntake": 180, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2027-06-30" },
+        { "name": "B.Tech Electronics & Communication", "level": "UG", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2027-06-30" },
+        { "name": "B.Tech Mechanical Engineering", "level": "UG", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "facultyCount": 42,
+      "facultyStudentRatio": "1:15",
+      "terPaymentStatus": "Paid",
+      "complianceStatus": "Compliant",
+      "deficienciesCount": 0,
+      "landAreaAcres": 7.5,
+      "builtUpAreaSqM": 14200,
+      "lastInspectionDate": "2025-11-14",
+      "trustOrSocietyName": "Aryavart Educational Trust"
+    },
+    {
+      "id": "SYN-INST-102",
+      "name": "Kalinga Polytechnic & Engineering College",
+      "code": "KPEC-102",
+      "region": "Eastern",
+      "state": "Odisha",
+      "type": "Private-Self-Financing",
+      "approvedIntake": 360,
+      "programmes": [
+        { "name": "Diploma Mechanical Engineering", "level": "Diploma", "currentApprovedIntake": 120, "requestedIntake": 180, "accreditationStatus": "Eligible" },
+        { "name": "Diploma Electrical Engineering", "level": "Diploma", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Eligible" },
+        { "name": "Diploma Civil Engineering", "level": "Diploma", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "facultyCount": 22,
+      "facultyStudentRatio": "1:22",
+      "terPaymentStatus": "Paid",
+      "complianceStatus": "Deficiency Indicated",
+      "deficienciesCount": 2,
+      "landAreaAcres": 4.8,
+      "builtUpAreaSqM": 9200,
+      "lastInspectionDate": "2025-08-20",
+      "trustOrSocietyName": "Utkal Shiksha Samiti"
+    },
+    {
+      "id": "SYN-INST-103",
+      "name": "Deccan College of Engineering & Technology",
+      "code": "DCET-103",
+      "region": "South-West",
+      "state": "Karnataka",
+      "type": "Govt-Aided",
+      "approvedIntake": 540,
+      "programmes": [
+        { "name": "B.Tech Artificial Intelligence & Data Science", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 120, "accreditationStatus": "Eligible" },
+        { "name": "B.Tech Computer Science & Engineering", "level": "UG", "currentApprovedIntake": 240, "requestedIntake": 240, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2028-03-31" },
+        { "name": "M.Tech Cyber Security", "level": "PG", "currentApprovedIntake": 24, "requestedIntake": 24, "accreditationStatus": "Eligible" }
+      ],
+      "facultyCount": 56,
+      "facultyStudentRatio": "1:14",
+      "terPaymentStatus": "Paid",
+      "complianceStatus": "Compliant",
+      "deficienciesCount": 0,
+      "landAreaAcres": 12.0,
+      "builtUpAreaSqM": 24500,
+      "lastInspectionDate": "2025-10-12",
+      "trustOrSocietyName": "Karnataka Technical Foundation"
+    },
+    {
+      "id": "SYN-INST-104",
+      "name": "Vindhya Rural Institute of Technology",
+      "code": "VRIT-104",
+      "region": "Central",
+      "state": "Madhya Pradesh",
+      "type": "Private-Self-Financing",
+      "approvedIntake": 240,
+      "programmes": [
+        { "name": "B.Tech Civil Engineering", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Not Accredited" },
+        { "name": "B.Tech Electrical & Electronics", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Not Accredited" },
+        { "name": "B.Tech Computer Science", "level": "UG", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "facultyCount": 16,
+      "facultyStudentRatio": "1:24",
+      "terPaymentStatus": "Unpaid",
+      "complianceStatus": "Deficiency Indicated",
+      "deficienciesCount": 3,
+      "landAreaAcres": 3.2,
+      "builtUpAreaSqM": 6100,
+      "lastInspectionDate": "2025-05-19",
+      "trustOrSocietyName": "Gramin Kalyan Seva Nyas"
+    },
+    {
+      "id": "SYN-INST-105",
+      "name": "Sahyadri Global Institute of Technology & Management",
+      "code": "SGITM-105",
+      "region": "Western",
+      "state": "Maharashtra",
+      "type": "Private-Self-Financing",
+      "approvedIntake": 600,
+      "programmes": [
+        { "name": "Master of Business Administration (MBA)", "level": "PG", "currentApprovedIntake": 180, "requestedIntake": 240, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2026-12-31" },
+        { "name": "B.Tech Information Technology", "level": "UG", "currentApprovedIntake": 180, "requestedIntake": 180, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2027-06-30" },
+        { "name": "B.Tech Biotechnology", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Eligible" }
+      ],
+      "facultyCount": 64,
+      "facultyStudentRatio": "1:15",
+      "terPaymentStatus": "Paid",
+      "complianceStatus": "Compliant",
+      "deficienciesCount": 0,
+      "landAreaAcres": 8.0,
+      "builtUpAreaSqM": 19500,
+      "lastInspectionDate": "2025-12-05",
+      "trustOrSocietyName": "Sahyadri Vidya Vardhak Mandal"
+    },
+    {
+      "id": "SYN-INST-106",
+      "name": "Brahmaputra Engineering College",
+      "code": "BEC-106",
+      "region": "Eastern",
+      "state": "Assam",
+      "type": "Government",
+      "approvedIntake": 300,
+      "programmes": [
+        { "name": "B.Tech Mechanical Engineering", "level": "UG", "currentApprovedIntake": 90, "requestedIntake": 90, "accreditationStatus": "Accredited" },
+        { "name": "B.Tech Electrical Engineering", "level": "UG", "currentApprovedIntake": 90, "requestedIntake": 90, "accreditationStatus": "Accredited" },
+        { "name": "B.Tech Chemical Engineering", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Eligible" }
+      ],
+      "facultyCount": 38,
+      "facultyStudentRatio": "1:12",
+      "terPaymentStatus": "Exempt",
+      "complianceStatus": "Compliant",
+      "deficienciesCount": 0,
+      "landAreaAcres": 25.0,
+      "builtUpAreaSqM": 32000,
+      "lastInspectionDate": "2025-09-18",
+      "trustOrSocietyName": "Directorate of Technical Education, Assam"
+    },
+    {
+      "id": "SYN-INST-107",
+      "name": "Chola Heritage Institute of Technology",
+      "code": "CHIT-107",
+      "region": "Southern",
+      "state": "Tamil Nadu",
+      "type": "Private-Self-Financing",
+      "approvedIntake": 480,
+      "programmes": [
+        { "name": "B.Tech Robotics and Automation", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 120, "accreditationStatus": "Eligible" },
+        { "name": "B.Tech Mechatronics", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Eligible" },
+        { "name": "B.Tech Computer Science", "level": "UG", "currentApprovedIntake": 180, "requestedIntake": 180, "accreditationStatus": "Accredited" }
+      ],
+      "facultyCount": 44,
+      "facultyStudentRatio": "1:16",
+      "terPaymentStatus": "Paid",
+      "complianceStatus": "Compliant",
+      "deficienciesCount": 0,
+      "landAreaAcres": 10.5,
+      "builtUpAreaSqM": 21000,
+      "lastInspectionDate": "2025-11-28",
+      "trustOrSocietyName": "Thanjavur Educational Trust"
+    },
+    {
+      "id": "SYN-INST-108",
+      "name": "Marwar Technical Academy",
+      "code": "MTA-108",
+      "region": "North-West",
+      "state": "Rajasthan",
+      "type": "Private-Self-Financing",
+      "approvedIntake": 240,
+      "programmes": [
+        { "name": "B.Tech Mining Engineering", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Eligible" },
+        { "name": "B.Tech Civil Engineering", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Eligible" }
+      ],
+      "facultyCount": 18,
+      "facultyStudentRatio": "1:20",
+      "terPaymentStatus": "Partial",
+      "complianceStatus": "Deficiency Indicated",
+      "deficienciesCount": 1,
+      "landAreaAcres": 5.0,
+      "builtUpAreaSqM": 7800,
+      "lastInspectionDate": "2025-07-10",
+      "trustOrSocietyName": "Marwar Shaikshanik Sansthan"
+    }
+  ],
+  "documentTypes": [
+    { "id": "institution_profile", "name": "Institutional Profile & Declaration", "requiredCategories": ["EoA", "New Programme", "Intake Change", "Institutional Change"] },
+    { "id": "occupancy_certificate", "name": "Building Occupancy Certificate", "requiredCategories": ["EoA", "New Programme", "Intake Change", "Institutional Change"] },
+    { "id": "fire_safety_certificate", "name": "Fire Safety Certificate", "requiredCategories": ["EoA", "New Programme", "Intake Change", "Institutional Change"] },
+    { "id": "land_ownership_doc", "name": "Land Use / Title Certificate", "requiredCategories": ["EoA", "New Programme", "Intake Change", "Institutional Change"] },
+    { "id": "affiliating_univ_noc", "name": "Affiliating University NOC / Affiliation Order", "requiredCategories": ["EoA", "New Programme", "Intake Change"] },
+    { "id": "nba_accreditation", "name": "NBA / NAAC Accreditation Letter", "requiredCategories": ["Intake Change", "New Programme"] },
+    { "id": "faculty_cadre_ratio_cert", "name": "Faculty Cadre & Salary Audited Statement", "requiredCategories": ["EoA", "Intake Change"] },
+    { "id": "ter_payment_receipt", "name": "TER Fee Payment Challan", "requiredCategories": ["EoA", "New Programme", "Intake Change", "Institutional Change"] },
+    { "id": "floor_plan_blueprint", "name": "Architect Approved Floor Blueprint", "requiredCategories": ["New Programme", "Institutional Change"] }
+  ],
+  "rules": [
+    {
+      "id": "RULE-DOC-001",
+      "title": "Mandatory Document Completeness",
+      "category": "document_presence",
+      "enabled": true,
+      "severity": "critical",
+      "description": "Verifies that all mandatory documents required for the given application category are uploaded and readable.",
+      "field": "documents",
+      "condition": "all_mandatory_present == true",
+      "explanation": "AICTE Approval Process Handbook mandates complete submission of statutory affidavits and structural certificates before scrutiny.",
+      "configurableThreshold": 100
+    },
+    {
+      "id": "RULE-DATE-002",
+      "title": "Certificate Validity & Expiry",
+      "category": "date_validity",
+      "enabled": true,
+      "severity": "high",
+      "description": "Ensures statutory safety certificates (Fire Safety, Building Occupancy) remain valid for the entire academic approval cycle.",
+      "field": "expiryDate",
+      "condition": "expiryDate >= 2026-06-30",
+      "explanation": "Safety certificates expired prior to academic cycle start pose non-compliance risk for student admissions.",
+      "configurableThreshold": "2026-06-30"
+    },
+    {
+      "id": "RULE-INST-003",
+      "title": "Institution Identity Verification",
+      "category": "identifier_match",
+      "enabled": true,
+      "severity": "critical",
+      "description": "Cross-verifies extracted institution name, AICTE ID, and trust name against master institutional registration records.",
+      "field": "institutionId",
+      "condition": "extracted_id == record_id && extracted_name == record_name",
+      "explanation": "Identifiers must correspond precisely to prevent unauthorized representation or cross-entity application blending.",
+      "configurableThreshold": 95
+    },
+    {
+      "id": "RULE-INTK-004",
+      "title": "Intake Expansion Ceiling & Accreditation Prerequisite",
+      "category": "intake_compliance",
+      "enabled": true,
+      "severity": "high",
+      "description": "Validates that requested intake increase does not exceed 50% threshold and requires valid NBA accreditation for expanded courses.",
+      "field": "requestedIntake",
+      "condition": "requestedIntake <= approvedIntake * 1.5 && accreditation_valid == true",
+      "explanation": "APH guidelines stipulate NBA accreditation of at least 50% eligible courses prior to sanctioned intake expansion.",
+      "configurableThreshold": 50
+    },
+    {
+      "id": "RULE-TER-005",
+      "title": "Technical Education Regulatory (TER) Payment Clearance",
+      "category": "payment_status",
+      "enabled": true,
+      "severity": "critical",
+      "description": "Verifies confirmation of complete TER processing fee payment through payment gateway or treasury challan.",
+      "field": "terPaymentStatus",
+      "condition": "terPaymentStatus == 'Paid' || terPaymentStatus == 'Exempt'",
+      "explanation": "Non-exempt applications without confirmed TER fee credit cannot be scheduled for committee scrutiny.",
+      "configurableThreshold": "Paid"
+    },
+    {
+      "id": "RULE-XUSE-006",
+      "title": "Cross-Institutional Document Fingerprint Reuse",
+      "category": "cross_institution_reuse",
+      "enabled": true,
+      "severity": "critical",
+      "description": "Calculates cryptographic perceptual hash of architectural drawings and certificates to detect duplicate reuse across different colleges.",
+      "field": "metadata.fingerprint",
+      "condition": "global_fingerprint_occurrence == 1",
+      "explanation": "Flagged instances where identical floor plans or safety certificates are submitted by unrelated institutions indicate potential document recycling.",
+      "configurableThreshold": 1
+    },
+    {
+      "id": "RULE-ANOM-007",
+      "title": "Digital Manipulation & Edit-Trace Screening",
+      "category": "document_presence",
+      "enabled": true,
+      "severity": "high",
+      "description": "Inspects PDF structural xref tables, font dictionaries, and modification timestamps for post-issuance alterations.",
+      "field": "metadata.hasEditTraces",
+      "condition": "metadata.hasEditTraces == false",
+      "explanation": "Secondary modification artifacts or conflicting producer software signatures signal potential digital tampering requiring manual scrutiny.",
+      "configurableThreshold": 0
+    },
+    {
+      "id": "RULE-INFRA-008",
+      "title": "Infrastructure Geotagging & Area Sufficiency",
+      "category": "infrastructure",
+      "enabled": true,
+      "severity": "medium",
+      "description": "Verifies metadata location coordinates on laboratory photographs and matches floor plan area against minimum norms.",
+      "field": "infrastructure.hasGps",
+      "condition": "hasGps == true && builtUpAreaSqM >= minimum_norm",
+      "explanation": "Mandated geo-tagged photographic evidence prevents submission of stock or off-campus facility photos.",
+      "configurableThreshold": 10000
+    }
+  ],
+  "applications": [
+    {
+      "id": "APP-2026-0811",
+      "referenceNumber": "AICTE/NR/2026/EOA-0811",
+      "institutionId": "SYN-INST-101",
+      "institutionName": "Aryavart Institute of Advanced Technology",
+      "region": "Northern",
+      "category": "EoA",
+      "submittedAt": "2026-10-21T14:32:00+05:30",
+      "updatedAt": "2026-10-24T18:10:00+05:30",
+      "status": "Ready for review",
+      "priorityScore": 18,
+      "priorityBreakdown": {
+        "baseScore": 10,
+        "factors": [
+          { "factor": "Clean institutional record", "weight": -5, "contribution": -5, "explanation": "Zero prior deficiencies and valid NBA accreditation on 2 courses" },
+          { "factor": "Minor verification pending", "weight": 8, "contribution": 8, "explanation": "Affiliating university order pending background catalog response" },
+          { "factor": "Standard EoA category baseline", "weight": 5, "contribution": 5, "explanation": "Routine renewal with zero intake expansion" }
+        ],
+        "totalScore": 18
+      },
+      "programmes": [
+        { "name": "B.Tech Computer Science & Engineering", "level": "UG", "currentApprovedIntake": 180, "requestedIntake": 180, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2027-06-30" },
+        { "name": "B.Tech Electronics & Communication", "level": "UG", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2027-06-30" },
+        { "name": "B.Tech Mechanical Engineering", "level": "UG", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "requestedIntake": 420,
+      "previousApprovedIntake": 420,
+      "terPaymentStatus": "Paid",
+      "documents": [
+        {
+          "id": "DOC-101-01",
+          "name": "Fire Safety Certificate 2026-28",
+          "type": "fire_safety_certificate",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": "2028-04-30",
+          "issuer": "Chief Fire Officer, Lucknow Division",
+          "verificationStatus": "verified",
+          "fileName": "aryavart_fire_noc_2026.pdf",
+          "fileSizeKb": 1240,
+          "pageCount": 3,
+          "confidence": 0.98,
+          "extractedFields": [
+            { "key": "cert_no", "label": "Certificate Number", "value": "UPFS/LKO/2026/8841", "confidence": 0.99, "page": 1, "bbox": { "x": 0.65, "y": 0.12, "width": 0.28, "height": 0.04 }, "sourceText": "No. UPFS/LKO/2026/8841 Dated 15/04/2026" },
+            { "key": "inst_name", "label": "Institution Name", "value": "Aryavart Institute of Advanced Technology", "confidence": 0.97, "page": 1, "bbox": { "x": 0.25, "y": 0.28, "width": 0.55, "height": 0.05 }, "sourceText": "Issued to: Aryavart Institute of Advanced Technology, Sitapur Road", "matchesRecord": true, "recordValue": "Aryavart Institute of Advanced Technology" },
+            { "key": "valid_until", "label": "Valid Until", "value": "2028-04-30", "confidence": 0.96, "page": 1, "bbox": { "x": 0.35, "y": 0.72, "width": 0.3, "height": 0.03 }, "sourceText": "Valid up to: 30/04/2028 under NBC norms" }
+          ],
+          "metadata": { "creator": "Govt Document Portal", "producer": "Adobe PDF Lib 15.0", "hasEditTraces": false, "fingerprint": "fp_aiat_fire_2026_clean" },
+          "anomalies": []
+        },
+        {
+          "id": "DOC-101-02",
+          "name": "Building Occupancy Certificate",
+          "type": "occupancy_certificate",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "Lucknow Development Authority",
+          "verificationStatus": "verified",
+          "fileName": "aryavart_occupancy_cert.pdf",
+          "fileSizeKb": 2480,
+          "pageCount": 4,
+          "confidence": 0.95,
+          "extractedFields": [
+            { "key": "bldg_area", "label": "Built-up Area (Sq.M)", "value": "14200", "confidence": 0.96, "page": 2, "bbox": { "x": 0.45, "y": 0.38, "width": 0.22, "height": 0.035 }, "sourceText": "Total Super Built Up Area: 14,200 sq. meters", "matchesRecord": true, "recordValue": "14200" }
+          ],
+          "anomalies": []
+        },
+        {
+          "id": "DOC-101-03",
+          "name": "Affiliating University Order",
+          "type": "affiliating_univ_noc",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": "2027-05-31",
+          "issuer": "Dr. A.P.J. Abdul Kalam Technical University",
+          "verificationStatus": "verification_pending",
+          "fileName": "aktu_affiliation_2026_27.pdf",
+          "fileSizeKb": 1820,
+          "pageCount": 2,
+          "confidence": 0.92,
+          "extractedFields": [
+            { "key": "order_num", "label": "Affiliation Order", "value": "AKTU/AFF/2026/910", "confidence": 0.93, "page": 1, "bbox": { "x": 0.2, "y": 0.15, "width": 0.4, "height": 0.04 }, "sourceText": "Ref: AKTU/AFF/2026/910" }
+          ],
+          "anomalies": []
+        }
+      ],
+      "findings": [],
+      "verificationEvents": [
+        {
+          "id": "VE-01-A",
+          "documentId": "DOC-101-01",
+          "documentName": "Fire Safety Certificate 2026-28",
+          "source": "State Fire Services Portal (Uttar Pradesh)",
+          "timestamp": "2026-10-22T10:15:20+05:30",
+          "status": "verified",
+          "message": "NOC reference UPFS/LKO/2026/8841 authenticated successfully against state safety registry.",
+          "referenceNumber": "UPFS/LKO/2026/8841",
+          "retryCount": 0,
+          "canRetry": false
+        },
+        {
+          "id": "VE-01-B",
+          "documentId": "DOC-101-03",
+          "documentName": "Affiliating University Order",
+          "source": "AKTU Affiliation Registry Endpoint",
+          "timestamp": "2026-10-24T18:10:00+05:30",
+          "status": "verification_pending",
+          "message": "Query queued for synchronization with regional state university server; awaiting response packet.",
+          "referenceNumber": "AKTU/AFF/2026/910",
+          "retryCount": 0,
+          "canRetry": true
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-101-01",
+          "applicationId": "APP-2026-0811",
+          "evidenceType": "photograph",
+          "title": "Computer Systems Lab 01",
+          "fileName": "cs_lab1_geotagged.jpg",
+          "timestamp": "2026-10-18T11:45:00+05:30",
+          "location": "26.8920 N, 80.9520 E (Sitapur Rd Campus)",
+          "hasGps": true,
+          "declaredValue": "65 Workstations",
+          "measuredValue": "65 Configured Terminals Detected",
+          "threshold": "Min 30 Workstations",
+          "result": "Pass",
+          "reason": "Geotag matches registered institutional boundary within 12 meters tolerance; laboratory equipment layout verified.",
+          "advisoryOutcome": "No discrepancy indicated"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "APP-2026-0924",
+      "referenceNumber": "AICTE/ER/2026/INTK-0924",
+      "institutionId": "SYN-INST-102",
+      "institutionName": "Kalinga Polytechnic & Engineering College",
+      "region": "Eastern",
+      "category": "Intake Change",
+      "submittedAt": "2026-10-19T09:12:00+05:30",
+      "updatedAt": "2026-10-25T08:30:00+05:30",
+      "status": "Action required",
+      "priorityScore": 78,
+      "priorityBreakdown": {
+        "baseScore": 25,
+        "factors": [
+          { "factor": "Intake expansion exceeding threshold without NBA", "weight": 30, "contribution": 30, "explanation": "Requested 50% increase in Mechanical Engineering without accredited status" },
+          { "factor": "Expired Fire Safety NOC", "weight": 15, "contribution": 15, "explanation": "Fire certificate expired on 2025-12-31" },
+          { "factor": "Faculty deficiency record", "weight": 8, "contribution": 8, "explanation": "Institutional faculty ratio 1:22 violates diploma 1:20 norm" }
+        ],
+        "totalScore": 78
+      },
+      "programmes": [
+        { "name": "Diploma Mechanical Engineering", "level": "Diploma", "currentApprovedIntake": 120, "requestedIntake": 180, "accreditationStatus": "Eligible" },
+        { "name": "Diploma Electrical Engineering", "level": "Diploma", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "requestedIntake": 420,
+      "previousApprovedIntake": 360,
+      "terPaymentStatus": "Paid",
+      "documents": [
+        {
+          "id": "DOC-102-01",
+          "name": "Fire Safety Certificate",
+          "type": "fire_safety_certificate",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": "2025-12-31",
+          "issuer": "Directorate of Fire Services, Odisha",
+          "verificationStatus": "expired",
+          "fileName": "kalinga_fire_noc_2025.pdf",
+          "fileSizeKb": 1420,
+          "pageCount": 2,
+          "confidence": 0.94,
+          "extractedFields": [
+            { "key": "cert_no", "label": "NOC Reference", "value": "ODFS/CTC/2023/1102", "confidence": 0.95, "page": 1, "bbox": { "x": 0.6, "y": 0.14, "width": 0.32, "height": 0.04 }, "sourceText": "NOC No: ODFS/CTC/2023/1102" },
+            { "key": "valid_until", "label": "Validity Date", "value": "2025-12-31", "confidence": 0.97, "page": 1, "bbox": { "x": 0.38, "y": 0.65, "width": 0.28, "height": 0.035 }, "sourceText": "Valid until 31st December 2025 only." }
+          ],
+          "anomalies": [
+            {
+              "id": "ANOM-102-01",
+              "type": "date_anomaly",
+              "severity": "high",
+              "title": "Expired Safety Certificate",
+              "description": "Potential anomaly — requires human verification. Certificate expiration date precedes the 2026-27 academic session start date.",
+              "region": { "x": 0.38, "y": 0.65, "width": 0.28, "height": 0.035 }
+            }
+          ]
+        },
+        {
+          "id": "DOC-102-02",
+          "name": "Intake Expansion Justification & Faculty Cadre",
+          "type": "faculty_cadre_ratio_cert",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "Principal, Kalinga Polytechnic",
+          "verificationStatus": "mismatch_detected",
+          "fileName": "kalinga_intake_faculty_ratio.pdf",
+          "fileSizeKb": 1650,
+          "pageCount": 3,
+          "confidence": 0.89,
+          "extractedFields": [
+            { "key": "requested_seats", "label": "Requested Mechanical Intake", "value": "180", "confidence": 0.96, "page": 1, "bbox": { "x": 0.4, "y": 0.32, "width": 0.2, "height": 0.04 }, "sourceText": "Proposal for Mechanical Engg: 180 seats (additional 60)" },
+            { "key": "faculty_claimed", "label": "Sanctioned Faculty Count", "value": "30", "confidence": 0.88, "page": 2, "bbox": { "x": 0.45, "y": 0.48, "width": 0.18, "height": 0.03 }, "sourceText": "Total Full-time Faculty Available: 30", "matchesRecord": false, "recordValue": "22" }
+          ],
+          "anomalies": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FND-102-01",
+          "ruleId": "RULE-DATE-002",
+          "severity": "high",
+          "title": "Fire Safety NOC Expired",
+          "reason": "Fire certificate expired on 2025-12-31, prior to minimum threshold date 2026-06-30.",
+          "field": "expiryDate",
+          "submittedValue": "2025-12-31",
+          "recordValue": "Min 2026-06-30 required",
+          "evidence": { "documentId": "DOC-102-01", "documentName": "Fire Safety Certificate", "page": 1, "bbox": { "x": 0.38, "y": 0.65, "width": 0.28, "height": 0.035 } },
+          "recommendation": "Request clarification or valid renewed Fire Safety Certificate issued by State Fire Directorate.",
+          "wouldClearIf": "Upload renewed Fire NOC valid through at least 2026-06-30.",
+          "status": "active"
+        },
+        {
+          "id": "FND-102-02",
+          "ruleId": "RULE-INTK-004",
+          "severity": "critical",
+          "title": "Faculty Count Discrepancy for Intake Expansion",
+          "reason": "Submitted cadre document claims 30 faculty members, whereas institutional council master record reports only 22 approved faculty.",
+          "field": "facultyCount",
+          "submittedValue": "30",
+          "recordValue": "22",
+          "evidence": { "documentId": "DOC-102-02", "documentName": "Intake Expansion Justification", "page": 2, "bbox": { "x": 0.45, "y": 0.48, "width": 0.18, "height": 0.03 } },
+          "recommendation": "Escalate to scrutiny committee or request certified faculty joining orders with EPF deduction proof.",
+          "wouldClearIf": "Provide verified statutory salary accounts confirming 30 full-time faculty members.",
+          "status": "active"
+        }
+      ],
+      "verificationEvents": [
+        {
+          "id": "VE-02-A",
+          "documentId": "DOC-102-01",
+          "documentName": "Fire Safety Certificate",
+          "source": "State Fire Services Portal (Odisha)",
+          "timestamp": "2026-10-20T11:20:00+05:30",
+          "status": "expired",
+          "message": "NOC ODFS/CTC/2023/1102 is marked as EXPIRED in official registry since 31/12/2025; no renewal found.",
+          "referenceNumber": "ODFS/CTC/2023/1102",
+          "retryCount": 0,
+          "canRetry": false
+        },
+        {
+          "id": "VE-02-B",
+          "documentId": "DOC-102-02",
+          "documentName": "Faculty Cadre Certificate",
+          "source": "State Technical Education Council Faculty Registry",
+          "timestamp": "2026-10-22T14:40:00+05:30",
+          "status": "mismatch_detected",
+          "message": "Registered faculty roster contains 22 sanctioned posts versus 30 claimed in application.",
+          "referenceNumber": "KPEC-FAC-2026-Q1",
+          "retryCount": 0,
+          "canRetry": false
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-102-01",
+          "applicationId": "APP-2026-0924",
+          "evidenceType": "photograph",
+          "title": "Workshop Machine Shop - Lathe Section",
+          "fileName": "kalinga_workshop_lathes.jpg",
+          "timestamp": "2026-10-14T15:20:00+05:30",
+          "location": "Location GPS data missing from EXIF",
+          "hasGps": false,
+          "declaredValue": "15 Lathe Machines Installed",
+          "measuredValue": "Visual confirmation of 8 lathes",
+          "threshold": "Min 12 Lathe Units for 180 Intake",
+          "result": "Attention",
+          "reason": "Photograph lacks embedded geotag coordinates; visual machine count appears below requirement for additional division.",
+          "advisoryOutcome": "Needs additional evidence"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "APP-2026-1045",
+      "referenceNumber": "AICTE/SWR/2026/NEW-1045",
+      "institutionId": "SYN-INST-103",
+      "institutionName": "Deccan College of Engineering & Technology",
+      "region": "South-West",
+      "category": "New Programme",
+      "submittedAt": "2026-10-22T11:05:00+05:30",
+      "updatedAt": "2026-10-25T10:15:00+05:30",
+      "status": "Verification pending",
+      "priorityScore": 42,
+      "priorityBreakdown": {
+        "baseScore": 20,
+        "factors": [
+          { "factor": "New degree programme introduction", "weight": 15, "contribution": 15, "explanation": "Application seeks sanction for new B.Tech AI & Data Science" },
+          { "factor": "Issuer source temporarily unavailable", "weight": 12, "contribution": 12, "explanation": "State Land Records Bhoomi gateway timed out during verification" },
+          { "factor": "Accreditation standing positive", "weight": -5, "contribution": -5, "explanation": "Parent CSE programme holds valid NBA accreditation until 2028" }
+        ],
+        "totalScore": 42
+      },
+      "programmes": [
+        { "name": "B.Tech Artificial Intelligence & Data Science", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "requestedIntake": 600,
+      "previousApprovedIntake": 540,
+      "terPaymentStatus": "Paid",
+      "documents": [
+        {
+          "id": "DOC-103-01",
+          "name": "State Land Title Certificate",
+          "type": "land_ownership_doc",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "Karnataka Revenue Department (Bhoomi)",
+          "verificationStatus": "source_unavailable",
+          "fileName": "deccan_land_title_bhoomi.pdf",
+          "fileSizeKb": 3120,
+          "pageCount": 5,
+          "confidence": 0.91,
+          "extractedFields": [
+            { "key": "survey_no", "label": "Survey / Khasra Number", "value": "Sy. No. 142/2B, Bidadi", "confidence": 0.94, "page": 1, "bbox": { "x": 0.3, "y": 0.22, "width": 0.42, "height": 0.04 }, "sourceText": "Survey Number: 142/2B, Hobli: Bidadi, Ramanagara" },
+            { "key": "land_area", "label": "Total Land Area", "value": "12.0 Acres", "confidence": 0.95, "page": 2, "bbox": { "x": 0.4, "y": 0.45, "width": 0.25, "height": 0.035 }, "sourceText": "Extent: 12 Acres 00 Guntas (Converted for Educational Purpose)", "matchesRecord": true, "recordValue": "12.0" }
+          ],
+          "metadata": { "fingerprint": "fp_deccan_land_bhoomi_clean" },
+          "anomalies": []
+        },
+        {
+          "id": "DOC-103-02",
+          "name": "Architect Floor Blueprint - New AI Wing",
+          "type": "floor_plan_blueprint",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "CoA Registered Architect (CA/2012/5541)",
+          "verificationStatus": "verified",
+          "fileName": "deccan_ai_wing_blueprint.pdf",
+          "fileSizeKb": 4890,
+          "pageCount": 3,
+          "confidence": 0.96,
+          "extractedFields": [
+            { "key": "wing_area", "label": "New Wing Area", "value": "3200 Sq.M", "confidence": 0.95, "page": 1, "bbox": { "x": 0.55, "y": 0.82, "width": 0.3, "height": 0.035 }, "sourceText": "Additional Department Carpet Area: 3,200 sq.m" }
+          ],
+          "anomalies": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FND-103-01",
+          "ruleId": "RULE-INST-003",
+          "severity": "medium",
+          "title": "External Land Registry Inconclusive",
+          "reason": "State revenue portal gateway did not respond within timeout window. Verification status remains source_unavailable.",
+          "field": "land_ownership_doc",
+          "submittedValue": "Sy. No. 142/2B",
+          "recordValue": "Pending Gateway Confirmation",
+          "evidence": { "documentId": "DOC-103-01", "documentName": "State Land Title Certificate", "page": 1 },
+          "recommendation": "Execute simulated gateway retry or route to manual confirmation with district registrar seal.",
+          "wouldClearIf": "Successful connection retry to Bhoomi portal returns verified token.",
+          "status": "active"
+        }
+      ],
+      "verificationEvents": [
+        {
+          "id": "VE-03-A",
+          "documentId": "DOC-103-01",
+          "documentName": "State Land Title Certificate",
+          "source": "Karnataka Bhoomi Land Registry Service",
+          "timestamp": "2026-10-23T16:45:10+05:30",
+          "status": "source_unavailable",
+          "message": "Gateway HTTP 504 Gateway Timeout while resolving RTC record for Sy. No. 142/2B. Local retry scheduled.",
+          "referenceNumber": "BHM-RTC-2026-8819",
+          "retryCount": 1,
+          "canRetry": true
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-103-01",
+          "applicationId": "APP-2026-1045",
+          "evidenceType": "floor_plan",
+          "title": "AI & Data Science High-Performance Computing Lab",
+          "fileName": "deccan_hpc_lab_plan.pdf",
+          "timestamp": "2026-10-20T10:00:00+05:30",
+          "location": "Campus Block C, 3rd Floor",
+          "hasGps": true,
+          "declaredValue": "180 Sq.M Carpet Area",
+          "measuredValue": "182 Sq.M from Blueprint Scale",
+          "threshold": "Min 150 Sq.M for PG/UG Advanced Lab",
+          "result": "Pass",
+          "reason": "Measured blueprint dimensions conform with required institutional space norms for advanced compute labs.",
+          "advisoryOutcome": "No discrepancy indicated"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "APP-2026-1182",
+      "referenceNumber": "AICTE/CR/2026/EOA-1182",
+      "institutionId": "SYN-INST-104",
+      "institutionName": "Vindhya Rural Institute of Technology",
+      "region": "Central",
+      "category": "EoA",
+      "submittedAt": "2026-10-18T16:20:00+05:30",
+      "updatedAt": "2026-10-24T12:00:00+05:30",
+      "status": "Escalated",
+      "priorityScore": 92,
+      "priorityBreakdown": {
+        "baseScore": 30,
+        "factors": [
+          { "factor": "Potential document tampering / ELA anomaly", "weight": 35, "contribution": 35, "explanation": "High digital manipulation probability detected on Building Occupancy signature and intake stamp" },
+          { "factor": "Unpaid TER processing fee", "weight": 20, "contribution": 20, "explanation": "Transaction record indicates payment failure / uncredited fee" },
+          { "factor": "Cross-institutional floor plan duplicate", "weight": 15, "contribution": 15, "explanation": "Architect floor plan identical to Marwar Technical Academy submission" },
+          { "factor": "Prior deficiency history", "weight": -8, "contribution": -8, "explanation": "Active deficiencies from previous year show cause notice" }
+        ],
+        "totalScore": 92
+      },
+      "programmes": [
+        { "name": "B.Tech Computer Science", "level": "UG", "currentApprovedIntake": 120, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "requestedIntake": 240,
+      "previousApprovedIntake": 240,
+      "terPaymentStatus": "Unpaid",
+      "documents": [
+        {
+          "id": "DOC-104-01",
+          "name": "Building Occupancy Certificate",
+          "type": "occupancy_certificate",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "Gram Panchayat Building Authority",
+          "verificationStatus": "manual_review_required",
+          "fileName": "vindhya_occupancy_tampered_sample.pdf",
+          "fileSizeKb": 1890,
+          "pageCount": 2,
+          "confidence": 0.68,
+          "extractedFields": [
+            { "key": "bldg_area", "label": "Built-up Area (Sq.M)", "value": "11200", "confidence": 0.62, "page": 1, "bbox": { "x": 0.42, "y": 0.35, "width": 0.28, "height": 0.05 }, "sourceText": "Total Built Up: 11,200 sq.m", "matchesRecord": false, "recordValue": "6100" },
+            { "key": "approval_num", "label": "Approval Reference", "value": "GP/BLD/2021/449", "confidence": 0.71, "page": 1, "bbox": { "x": 0.6, "y": 0.12, "width": 0.35, "height": 0.04 }, "sourceText": "Ref: GP/BLD/2021/449" }
+          ],
+          "metadata": {
+            "creator": "Adobe Photoshop 24.1 (Windows)",
+            "producer": "Canva / Modified PDF Export",
+            "modificationDate": "2026-10-18T14:12:00+05:30",
+            "creationDate": "2021-06-10T10:00:00+05:30",
+            "hasEditTraces": true,
+            "fingerprint": "fp_vindhya_occupancy_tampered"
+          },
+          "anomalies": [
+            {
+              "id": "ANOM-104-01",
+              "type": "metadata_edit",
+              "severity": "critical",
+              "title": "Incompatible Producer & Modification Traces",
+              "description": "Potential anomaly — requires human verification. PDF metadata reveals creation in image editing software with modification date 5 years after claimed issuance.",
+              "region": { "x": 0.42, "y": 0.35, "width": 0.28, "height": 0.05 },
+              "details": { "producer": "Adobe Photoshop 24.1", "timeDiffYears": 5.3 }
+            },
+            {
+              "id": "ANOM-104-02",
+              "type": "ela_heatmap",
+              "severity": "critical",
+              "title": "Error Level Analysis (ELA) Compression Artifact",
+              "description": "Potential anomaly — requires human verification. High-frequency compression gradient detected around the built-up area numeral '11,200', indicating potential digital splicing over original '6,100'.",
+              "region": { "x": 0.42, "y": 0.35, "width": 0.28, "height": 0.05 }
+            }
+          ]
+        },
+        {
+          "id": "DOC-104-02",
+          "name": "TER Fee Payment Challan",
+          "type": "ter_payment_receipt",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "Central Bank of India Payment Gateway",
+          "verificationStatus": "mismatch_detected",
+          "fileName": "vindhya_ter_challan_unpaid.pdf",
+          "fileSizeKb": 980,
+          "pageCount": 1,
+          "confidence": 0.81,
+          "extractedFields": [
+            { "key": "utr_number", "label": "Transaction UTR", "value": "CBIN26101889920", "confidence": 0.85, "page": 1, "bbox": { "x": 0.35, "y": 0.4, "width": 0.35, "height": 0.04 }, "sourceText": "UTR Ref: CBIN26101889920 (Payment Initiated)" },
+            { "key": "amount", "label": "Amount (INR)", "value": "1,50,000", "confidence": 0.94, "page": 1, "bbox": { "x": 0.45, "y": 0.52, "width": 0.2, "height": 0.04 }, "sourceText": "Total: Rs. 1,50,000" }
+          ],
+          "anomalies": []
+        },
+        {
+          "id": "DOC-104-03",
+          "name": "Institutional Floor Plan Blueprint",
+          "type": "floor_plan_blueprint",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "Apex Design Consultants",
+          "verificationStatus": "manual_review_required",
+          "fileName": "vindhya_reused_blueprint.pdf",
+          "fileSizeKb": 4120,
+          "pageCount": 4,
+          "confidence": 0.76,
+          "extractedFields": [
+            { "key": "drawing_no", "label": "Drawing Number", "value": "APEX/ARCH/2024/77", "confidence": 0.82, "page": 1, "bbox": { "x": 0.7, "y": 0.85, "width": 0.25, "height": 0.035 }, "sourceText": "Dwg: APEX/ARCH/2024/77" }
+          ],
+          "metadata": { "fingerprint": "fp_cross_reuse_blueprint_hash_7781" },
+          "anomalies": [
+            {
+              "id": "ANOM-104-03",
+              "type": "cross_reuse",
+              "severity": "critical",
+              "title": "Cross-Institutional Blueprint Duplicate",
+              "description": "Potential anomaly — requires human verification. Perceptual layout fingerprint matches document submitted by Marwar Technical Academy (APP-2026-1502).",
+              "region": { "x": 0.1, "y": 0.1, "width": 0.8, "height": 0.8 },
+              "details": { "matchingApp": "APP-2026-1502", "matchingInst": "Marwar Technical Academy" }
+            }
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "id": "FND-104-01",
+          "ruleId": "RULE-ANOM-007",
+          "severity": "critical",
+          "title": "Potential Digital Tampering on Occupancy Certificate",
+          "reason": "Potential anomaly — requires human verification. Splicing indicators detected on built-up area field and mismatch with recorded 6,100 sq.m.",
+          "field": "builtUpAreaSqM",
+          "submittedValue": "11,200 Sq.M",
+          "recordValue": "6,100 Sq.M",
+          "evidence": { "documentId": "DOC-104-01", "documentName": "Building Occupancy Certificate", "page": 1, "bbox": { "x": 0.42, "y": 0.35, "width": 0.28, "height": 0.05 } },
+          "recommendation": "Escalate to Senior Scrutiny Committee and initiate physical spot verification by regional directorate.",
+          "wouldClearIf": "Production of original municipal council record and stamped certified extract from local registrar.",
+          "status": "active"
+        },
+        {
+          "id": "FND-104-02",
+          "ruleId": "RULE-TER-005",
+          "severity": "critical",
+          "title": "TER Fee Unpaid / Rejected",
+          "reason": "Payment transaction CBIN26101889920 failed at bank reconciliation; account ledger reports unpaid status.",
+          "field": "terPaymentStatus",
+          "submittedValue": "Payment Initiated",
+          "recordValue": "Unpaid / Failed",
+          "evidence": { "documentId": "DOC-104-02", "documentName": "TER Fee Payment Challan", "page": 1, "bbox": { "x": 0.35, "y": 0.4, "width": 0.35, "height": 0.04 } },
+          "recommendation": "Request clarification or require immediate re-payment through payment gateway before processing.",
+          "wouldClearIf": "Confirmed credit transaction reference with bank success code.",
+          "status": "active"
+        },
+        {
+          "id": "FND-104-03",
+          "ruleId": "RULE-XUSE-006",
+          "severity": "critical",
+          "title": "Identical Floor Plan Reused Across Institutions",
+          "reason": "Potential anomaly — requires human verification. Architectural drawing fingerprint identical to submission by Marwar Technical Academy (MTA-108).",
+          "field": "metadata.fingerprint",
+          "submittedValue": "fp_cross_reuse_blueprint_hash_7781",
+          "recordValue": "Unique to institution",
+          "evidence": { "documentId": "DOC-104-03", "documentName": "Institutional Floor Plan Blueprint", "page": 1 },
+          "recommendation": "Escalate case and issue formal notice to Council of Architecture registered architect.",
+          "wouldClearIf": "Site survey report and distinct physical architect verification.",
+          "status": "active"
+        }
+      ],
+      "verificationEvents": [
+        {
+          "id": "VE-04-A",
+          "documentId": "DOC-104-01",
+          "documentName": "Building Occupancy Certificate",
+          "source": "AICTE Synthetic Document Forensics Engine",
+          "timestamp": "2026-10-23T15:10:00+05:30",
+          "status": "manual_review_required",
+          "message": "Secondary editor software signatures and localized compression anomalies detected; routed to human specialist review.",
+          "referenceNumber": "ANOM-DETECT-2026-881",
+          "retryCount": 0,
+          "canRetry": false
+        },
+        {
+          "id": "VE-04-B",
+          "documentId": "DOC-104-02",
+          "documentName": "TER Fee Payment Challan",
+          "source": "AICTE Central Treasury Reconciliation",
+          "timestamp": "2026-10-24T09:30:00+05:30",
+          "status": "mismatch_detected",
+          "message": "Bank gateway reports transaction status 'FAILED_AT_SOURCE' on UTR CBIN26101889920.",
+          "referenceNumber": "CBIN26101889920",
+          "retryCount": 0,
+          "canRetry": false
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-104-01",
+          "applicationId": "APP-2026-1182",
+          "evidenceType": "floor_plan",
+          "title": "Main Academic Complex Total Floor Space",
+          "fileName": "vindhya_reused_blueprint.pdf",
+          "timestamp": "2026-10-18T10:00:00+05:30",
+          "location": "Vindhya Rural Campus",
+          "hasGps": false,
+          "declaredValue": "11,200 Sq.M",
+          "measuredValue": "6,100 Sq.M (from original architect plan)",
+          "threshold": "Min 7,500 Sq.M for 240 Intake",
+          "result": "Mismatch",
+          "reason": "Actual blueprint floor measurements total 6,100 sq.m, failing the mandatory 7,500 sq.m requirement for existing approved programmes.",
+          "advisoryOutcome": "Recommend inspection"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "APP-2026-1250",
+      "referenceNumber": "AICTE/WR/2026/INTK-1250",
+      "institutionId": "SYN-INST-105",
+      "institutionName": "Sahyadri Global Institute of Technology & Management",
+      "region": "Western",
+      "category": "Intake Change",
+      "submittedAt": "2026-10-23T15:30:00+05:30",
+      "updatedAt": "2026-10-25T07:45:00+05:30",
+      "status": "Ready for review",
+      "priorityScore": 24,
+      "priorityBreakdown": {
+        "baseScore": 15,
+        "factors": [
+          { "factor": "NBA Accreditation valid for MBA expansion", "weight": -10, "contribution": -10, "explanation": "MBA department holds Tier-1 NBA accreditation expiring 2026-12-31" },
+          { "factor": "Intake expansion within 33% threshold", "weight": 12, "contribution": 12, "explanation": "Expansion from 180 to 240 seats (60 additional)" },
+          { "factor": "All issuer checks verified", "weight": -5, "contribution": -5, "explanation": "Fire, Building, and Affiliating order verified against issuer databases" },
+          { "factor": "Payment cleared", "weight": -2, "contribution": -2, "explanation": "TER processing fee fully reconciled" }
+        ],
+        "totalScore": 24
+      },
+      "programmes": [
+        { "name": "Master of Business Administration (MBA)", "level": "PG", "currentApprovedIntake": 180, "requestedIntake": 240, "accreditationStatus": "Accredited", "nbaAccreditationExpiry": "2026-12-31" }
+      ],
+      "requestedIntake": 660,
+      "previousApprovedIntake": 600,
+      "terPaymentStatus": "Paid",
+      "documents": [
+        {
+          "id": "DOC-105-01",
+          "name": "NBA Accreditation Certificate",
+          "type": "nba_accreditation",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": "2026-12-31",
+          "issuer": "National Board of Accreditation",
+          "verificationStatus": "verified",
+          "fileName": "sahyadri_nba_mba_cert.pdf",
+          "fileSizeKb": 1780,
+          "pageCount": 2,
+          "confidence": 0.98,
+          "extractedFields": [
+            { "key": "nba_file_no", "label": "NBA File Reference", "value": "NBA/AUTH/2023/MAH-118", "confidence": 0.99, "page": 1, "bbox": { "x": 0.2, "y": 0.15, "width": 0.45, "height": 0.04 }, "sourceText": "File No: NBA/AUTH/2023/MAH-118 Dated 12/07/2023" },
+            { "key": "accred_programme", "label": "Accredited Course", "value": "Master of Business Administration", "confidence": 0.98, "page": 1, "bbox": { "x": 0.3, "y": 0.35, "width": 0.5, "height": 0.04 }, "sourceText": "Course: Master of Business Administration (Accredited for 3 years)" }
+          ],
+          "anomalies": []
+        },
+        {
+          "id": "DOC-105-02",
+          "name": "Fire Safety NOC",
+          "type": "fire_safety_certificate",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": "2027-09-30",
+          "issuer": "Maharashtra Fire Services Directorate",
+          "verificationStatus": "verified",
+          "fileName": "sahyadri_fire_2027.pdf",
+          "fileSizeKb": 1340,
+          "pageCount": 2,
+          "confidence": 0.97,
+          "extractedFields": [
+            { "key": "noc_num", "label": "Fire NOC Number", "value": "MFS/PUN/2024/902", "confidence": 0.98, "page": 1, "bbox": { "x": 0.62, "y": 0.14, "width": 0.3, "height": 0.04 }, "sourceText": "NOC No. MFS/PUN/2024/902" }
+          ],
+          "anomalies": []
+        }
+      ],
+      "findings": [],
+      "verificationEvents": [
+        {
+          "id": "VE-05-A",
+          "documentId": "DOC-105-01",
+          "documentName": "NBA Accreditation Certificate",
+          "source": "National Board of Accreditation e-Verification Gateway",
+          "timestamp": "2026-10-24T11:00:00+05:30",
+          "status": "verified",
+          "message": "File reference NBA/AUTH/2023/MAH-118 verified active; valid up to 31/12/2026.",
+          "referenceNumber": "NBA/AUTH/2023/MAH-118",
+          "retryCount": 0,
+          "canRetry": false
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-105-01",
+          "applicationId": "APP-2026-1250",
+          "evidenceType": "photograph",
+          "title": "Management Seminar Hall 02",
+          "fileName": "sahyadri_hall2_geotag.jpg",
+          "timestamp": "2026-10-22T14:15:00+05:30",
+          "location": "18.5204 N, 73.8567 E (Pune Campus)",
+          "hasGps": true,
+          "declaredValue": "200 Seating Capacity",
+          "measuredValue": "210 Tiered Seats Verified",
+          "threshold": "Min 150 Seats for Expanded PG Division",
+          "result": "Pass",
+          "reason": "Facility coordinates match Pune campus registry; capacity exceeds required threshold.",
+          "advisoryOutcome": "No discrepancy indicated"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "APP-2026-1334",
+      "referenceNumber": "AICTE/ER/2026/EOA-1334",
+      "institutionId": "SYN-INST-106",
+      "institutionName": "Brahmaputra Engineering College",
+      "region": "Eastern",
+      "category": "EoA",
+      "submittedAt": "2026-10-21T17:15:00+05:30",
+      "updatedAt": "2026-10-24T14:20:00+05:30",
+      "status": "Ready for review",
+      "priorityScore": 12,
+      "priorityBreakdown": {
+        "baseScore": 10,
+        "factors": [
+          { "factor": "State Government Institution status", "weight": -8, "contribution": -8, "explanation": "Full state government administrative and treasury governance" },
+          { "factor": "TER payment exempt", "weight": 0, "contribution": 0, "explanation": "Government institutions granted regulatory exemption under APH 2026-27" },
+          { "factor": "All statutory safety certificates verified", "weight": -5, "contribution": -5, "explanation": "PWD safety inspection and district fire clearances authenticated" }
+        ],
+        "totalScore": 12
+      },
+      "programmes": [
+        { "name": "B.Tech Mechanical Engineering", "level": "UG", "currentApprovedIntake": 90, "requestedIntake": 90, "accreditationStatus": "Accredited" },
+        { "name": "B.Tech Electrical Engineering", "level": "UG", "currentApprovedIntake": 90, "requestedIntake": 90, "accreditationStatus": "Accredited" },
+        { "name": "B.Tech Chemical Engineering", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Eligible" }
+      ],
+      "requestedIntake": 300,
+      "previousApprovedIntake": 300,
+      "terPaymentStatus": "Exempt",
+      "documents": [
+        {
+          "id": "DOC-106-01",
+          "name": "State PWD Building Structural Stability Certificate",
+          "type": "occupancy_certificate",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": "2029-03-31",
+          "issuer": "Public Works Department (Building Division), Guwahati",
+          "verificationStatus": "verified",
+          "fileName": "bec_pwd_stability_2026.pdf",
+          "fileSizeKb": 2100,
+          "pageCount": 3,
+          "confidence": 0.99,
+          "extractedFields": [
+            { "key": "pwd_order", "label": "PWD Certificate Ref", "value": "PWD/BLD/GAU/2026/410", "confidence": 0.99, "page": 1, "bbox": { "x": 0.6, "y": 0.12, "width": 0.35, "height": 0.04 }, "sourceText": "Memo No. PWD/BLD/GAU/2026/410" },
+            { "key": "bldg_status", "label": "Structural Fitness", "value": "Declared Fit & Compliant", "confidence": 0.98, "page": 1, "bbox": { "x": 0.3, "y": 0.6, "width": 0.45, "height": 0.04 }, "sourceText": "Structure certified safe and fit for institutional educational usage." }
+          ],
+          "anomalies": []
+        }
+      ],
+      "findings": [],
+      "verificationEvents": [
+        {
+          "id": "VE-06-A",
+          "documentId": "DOC-106-01",
+          "documentName": "State PWD Building Certificate",
+          "source": "Assam State Public Works e-Governance Repository",
+          "timestamp": "2026-10-22T13:40:00+05:30",
+          "status": "verified",
+          "message": "Certificate authenticated against State PWD engineering records.",
+          "referenceNumber": "PWD/BLD/GAU/2026/410",
+          "retryCount": 0,
+          "canRetry": false
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-106-01",
+          "applicationId": "APP-2026-1334",
+          "evidenceType": "photograph",
+          "title": "Central Digital Library & Reading Room",
+          "fileName": "bec_library_reading_room.jpg",
+          "timestamp": "2026-10-19T11:30:00+05:30",
+          "location": "26.1445 N, 91.7362 E (Guwahati Campus)",
+          "hasGps": true,
+          "declaredValue": "450 Seating Capacity",
+          "measuredValue": "480 Reading Seats",
+          "threshold": "Min 300 Seats for 300 Intake",
+          "result": "Pass",
+          "reason": "Geotag verified; seating and digital resource terminals comply with standard norms.",
+          "advisoryOutcome": "No discrepancy indicated"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "APP-2026-1419",
+      "referenceNumber": "AICTE/SR/2026/INST-1419",
+      "institutionId": "SYN-INST-107",
+      "institutionName": "Chola Heritage Institute of Technology",
+      "region": "Southern",
+      "category": "Institutional Change",
+      "submittedAt": "2026-10-20T13:40:00+05:30",
+      "updatedAt": "2026-10-25T09:10:00+05:30",
+      "status": "In review",
+      "priorityScore": 55,
+      "priorityBreakdown": {
+        "baseScore": 25,
+        "factors": [
+          { "factor": "Change of site / institutional premises requested", "weight": 20, "contribution": 20, "explanation": "Application seeks relocation of engineering campus to new revenue block" },
+          { "factor": "Local municipal conversion order pending manual review", "weight": 10, "contribution": 10, "explanation": "Land use conversion certificate requires collectorate manual confirmation" },
+          { "factor": "Clean payment and prior compliance", "weight": -5, "contribution": -5, "explanation": "Zero deficiency history and verified TER payment" }
+        ],
+        "totalScore": 55
+      },
+      "programmes": [
+        { "name": "B.Tech Robotics and Automation", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 120, "accreditationStatus": "Eligible" }
+      ],
+      "requestedIntake": 540,
+      "previousApprovedIntake": 480,
+      "terPaymentStatus": "Paid",
+      "documents": [
+        {
+          "id": "DOC-107-01",
+          "name": "District Collectorate Land Conversion Order",
+          "type": "land_ownership_doc",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "District Revenue Officer, Thanjavur",
+          "verificationStatus": "manual_review_required",
+          "fileName": "chola_land_conversion_order.pdf",
+          "fileSizeKb": 3410,
+          "pageCount": 4,
+          "confidence": 0.88,
+          "extractedFields": [
+            { "key": "collector_memo", "label": "Conversion Order Memo", "value": "DRO/TNJ/REV/2025/1190", "confidence": 0.91, "page": 1, "bbox": { "x": 0.25, "y": 0.18, "width": 0.45, "height": 0.04 }, "sourceText": "Dis. No. DRO/TNJ/REV/2025/1190 Dated 18/11/2025" },
+            { "key": "survey_new", "label": "New Site Survey Number", "value": "Sy. No. 201/1A & 201/2B", "confidence": 0.89, "page": 2, "bbox": { "x": 0.35, "y": 0.42, "width": 0.4, "height": 0.04 }, "sourceText": "Situated at Survey Nos. 201/1A, 201/2B, Vallam Village" }
+          ],
+          "anomalies": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FND-107-01",
+          "ruleId": "RULE-DOC-001",
+          "severity": "medium",
+          "title": "Site Change Requires District Authority Manual Scrutiny",
+          "reason": "Statutory rules for institutional relocation mandate physical verification of revenue conversion orders by state nodal officer.",
+          "field": "land_ownership_doc",
+          "submittedValue": "Sy. No. 201/1A",
+          "recordValue": "Original Campus Site (Sy. No. 88/1)",
+          "evidence": { "documentId": "DOC-107-01", "documentName": "District Land Conversion Order", "page": 2 },
+          "recommendation": "Route to manual confirmation queue for State Technical Education Directorate officer review.",
+          "wouldClearIf": "Confirmation of conversion letter authenticity by District Revenue Officer.",
+          "status": "active"
+        }
+      ],
+      "verificationEvents": [
+        {
+          "id": "VE-07-A",
+          "documentId": "DOC-107-01",
+          "documentName": "District Land Conversion Order",
+          "source": "Tamil Nadu Land Administration e-Portal",
+          "timestamp": "2026-10-23T17:20:00+05:30",
+          "status": "manual_review_required",
+          "message": "Conversion order is indexed as 'Manual Ledger File'; requires district nodal officer physical signature confirmation.",
+          "referenceNumber": "DRO/TNJ/REV/2025/1190",
+          "retryCount": 0,
+          "canRetry": false
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-107-01",
+          "applicationId": "APP-2026-1419",
+          "evidenceType": "land_certificate",
+          "title": "New Campus Site Boundary Demarcation",
+          "fileName": "chola_site_survey_map.pdf",
+          "timestamp": "2026-10-15T09:00:00+05:30",
+          "location": "Vallam Village, Thanjavur",
+          "hasGps": true,
+          "declaredValue": "10.5 Acres Contiguous Land",
+          "measuredValue": "10.5 Acres Registered",
+          "threshold": "Min 7.5 Acres in Non-Metro",
+          "result": "Pass",
+          "reason": "Plot boundaries verify contiguous land possession under exclusive lease/title to applicant trust.",
+          "advisoryOutcome": "No discrepancy indicated"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "id": "APP-2026-1502",
+      "referenceNumber": "AICTE/NWR/2026/EOA-1502",
+      "institutionId": "SYN-INST-108",
+      "institutionName": "Marwar Technical Academy",
+      "region": "North-West",
+      "category": "EoA",
+      "submittedAt": "2026-10-17T11:00:00+05:30",
+      "updatedAt": "2026-10-24T16:30:00+05:30",
+      "status": "Action required",
+      "priorityScore": 84,
+      "priorityBreakdown": {
+        "baseScore": 28,
+        "factors": [
+          { "factor": "Duplicate architectural blueprint across colleges", "weight": 35, "contribution": 35, "explanation": "Architect drawing fingerprint identical to Vindhya Rural Institute submission (APP-2026-1182)" },
+          { "factor": "Partial TER fee remittance", "weight": 15, "contribution": 15, "explanation": "Partial payment of Rs. 75,000 against required Rs. 1,50,000 fee" },
+          { "factor": "Faculty deficiency record", "weight": 10, "contribution": 10, "explanation": "Shortfall of 3 qualified assistant professors in Mining Engineering" },
+          { "factor": "Active institutional deficiency notice", "weight": -4, "contribution": -4, "explanation": "Existing deficiency noted in council records" }
+        ],
+        "totalScore": 84
+      },
+      "programmes": [
+        { "name": "B.Tech Mining Engineering", "level": "UG", "currentApprovedIntake": 60, "requestedIntake": 60, "accreditationStatus": "Eligible" }
+      ],
+      "requestedIntake": 240,
+      "previousApprovedIntake": 240,
+      "terPaymentStatus": "Partial",
+      "documents": [
+        {
+          "id": "DOC-108-01",
+          "name": "Institutional Floor Plan Blueprint",
+          "type": "floor_plan_blueprint",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "Apex Design Consultants",
+          "verificationStatus": "manual_review_required",
+          "fileName": "marwar_academic_complex_plan.pdf",
+          "fileSizeKb": 4120,
+          "pageCount": 4,
+          "confidence": 0.74,
+          "extractedFields": [
+            { "key": "dwg_ref", "label": "Architect Drawing No", "value": "APEX/ARCH/2024/77", "confidence": 0.84, "page": 1, "bbox": { "x": 0.7, "y": 0.85, "width": 0.25, "height": 0.035 }, "sourceText": "Dwg: APEX/ARCH/2024/77" }
+          ],
+          "metadata": { "fingerprint": "fp_cross_reuse_blueprint_hash_7781" },
+          "anomalies": [
+            {
+              "id": "ANOM-108-01",
+              "type": "cross_reuse",
+              "severity": "critical",
+              "title": "Cross-Institutional Blueprint Duplicate",
+              "description": "Potential anomaly — requires human verification. Drawing hash matches identical submission filed by Vindhya Rural Institute of Technology (APP-2026-1182).",
+              "region": { "x": 0.1, "y": 0.1, "width": 0.8, "height": 0.8 },
+              "details": { "matchingApp": "APP-2026-1182", "matchingInst": "Vindhya Rural Institute of Technology" }
+            }
+          ]
+        },
+        {
+          "id": "DOC-108-02",
+          "name": "TER Fee Partial Payment Receipt",
+          "type": "ter_payment_receipt",
+          "required": true,
+          "uploaded": true,
+          "expiryDate": null,
+          "issuer": "State Bank of India Payment Gateway",
+          "verificationStatus": "mismatch_detected",
+          "fileName": "marwar_partial_ter.pdf",
+          "fileSizeKb": 1100,
+          "pageCount": 1,
+          "confidence": 0.88,
+          "extractedFields": [
+            { "key": "amount_paid", "label": "Amount Remitted", "value": "Rs. 75,000", "confidence": 0.95, "page": 1, "bbox": { "x": 0.4, "y": 0.48, "width": 0.22, "height": 0.04 }, "sourceText": "Paid: INR 75,000.00 (Balance: INR 75,000.00)" }
+          ],
+          "anomalies": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FND-108-01",
+          "ruleId": "RULE-XUSE-006",
+          "severity": "critical",
+          "title": "Duplicate Architectural Drawing Submitted",
+          "reason": "Potential anomaly — requires human verification. Blueprint hash exactly matches submission by Vindhya Rural Institute of Technology (VRIT-104).",
+          "field": "metadata.fingerprint",
+          "submittedValue": "fp_cross_reuse_blueprint_hash_7781",
+          "recordValue": "Unique to institution",
+          "evidence": { "documentId": "DOC-108-01", "documentName": "Institutional Floor Plan Blueprint", "page": 1 },
+          "recommendation": "Escalate to hearing committee and summon architect of record for clarification.",
+          "wouldClearIf": "Fresh site measurement by council empaneled architect confirming distinct physical structure.",
+          "status": "active"
+        },
+        {
+          "id": "FND-108-02",
+          "ruleId": "RULE-TER-005",
+          "severity": "high",
+          "title": "TER Fee Balance Remittance Outstanding",
+          "reason": "Regulatory fee paid (Rs. 75,000) does not meet mandated tariff for 240 intake renewal (Rs. 1,50,000).",
+          "field": "terPaymentStatus",
+          "submittedValue": "Rs. 75,000 Paid",
+          "recordValue": "Rs. 1,50,000 Required",
+          "evidence": { "documentId": "DOC-108-02", "documentName": "TER Fee Partial Payment Receipt", "page": 1, "bbox": { "x": 0.4, "y": 0.48, "width": 0.22, "height": 0.04 } },
+          "recommendation": "Issue clarification notice giving 7 days for remaining balance remittance.",
+          "wouldClearIf": "Remit remaining balance of Rs. 75,000 with generated bank challan.",
+          "status": "active"
+        }
+      ],
+      "verificationEvents": [
+        {
+          "id": "VE-08-A",
+          "documentId": "DOC-108-01",
+          "documentName": "Institutional Floor Plan Blueprint",
+          "source": "AICTE Synthetic Perceptual Fingerprint Registry",
+          "timestamp": "2026-10-23T18:10:00+05:30",
+          "status": "manual_review_required",
+          "message": "Collision flag: Perceptual hash matches DOC-104-03 filed by Central Region institute VRIT-104.",
+          "referenceNumber": "COLLISION-FP-7781",
+          "retryCount": 0,
+          "canRetry": false
+        },
+        {
+          "id": "VE-08-B",
+          "documentId": "DOC-108-02",
+          "documentName": "TER Fee Partial Payment Receipt",
+          "source": "AICTE Accounts Gateway Service",
+          "timestamp": "2026-10-24T10:15:00+05:30",
+          "status": "mismatch_detected",
+          "message": "Payment credited: Rs. 75,000; short remittance detected against prescribed tariff of Rs. 1,50,000.",
+          "referenceNumber": "SBI-TER-2026-4401",
+          "retryCount": 0,
+          "canRetry": false
+        }
+      ],
+      "infrastructure": [
+        {
+          "id": "INF-108-01",
+          "applicationId": "APP-2026-1502",
+          "evidenceType": "photograph",
+          "title": "Mining Engineering Rock Mechanics Lab",
+          "fileName": "marwar_rock_mechanics.jpg",
+          "timestamp": "2026-10-12T16:00:00+05:30",
+          "location": "Jodhpur Rural, 26.2389 N, 73.0243 E",
+          "hasGps": true,
+          "declaredValue": "Universal Testing Machine & Core Drills",
+          "measuredValue": "Equipment present; visual signs of non-operational condition",
+          "threshold": "Operational Testing Rig Required",
+          "result": "Attention",
+          "reason": "Photographic inspection reveals equipment unpowered and lacking statutory calibration certificates.",
+          "advisoryOutcome": "Recommend inspection"
+        }
+      ],
+      "actions": []
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-001",
+      "applicationId": "APP-2026-1182",
+      "applicationRef": "AICTE/CR/2026/EOA-1182",
+      "institutionName": "Vindhya Rural Institute of Technology",
+      "type": "potential_anomaly",
+      "severity": "critical",
+      "title": "Potential Tampering & Edit Traces Flagged",
+      "message": "Building Occupancy Certificate contains high-confidence ELA anomalies and Photoshop software authoring metadata. Advisory review mandatory.",
+      "timestamp": "2026-10-24T12:00:00+05:30",
+      "dismissed": false
+    },
+    {
+      "id": "ALT-002",
+      "applicationId": "APP-2026-1502",
+      "applicationRef": "AICTE/NWR/2026/EOA-1502",
+      "institutionName": "Marwar Technical Academy",
+      "type": "potential_anomaly",
+      "severity": "critical",
+      "title": "Cross-Institutional Blueprint Duplicate Collision",
+      "message": "Architectural drawing fingerprint matches identical document filed by another institution in Central Region.",
+      "timestamp": "2026-10-24T16:30:00+05:30",
+      "dismissed": false
+    },
+    {
+      "id": "ALT-003",
+      "applicationId": "APP-2026-0924",
+      "applicationRef": "AICTE/ER/2026/INTK-0924",
+      "institutionName": "Kalinga Polytechnic & Engineering College",
+      "type": "expired_doc",
+      "severity": "high",
+      "title": "Fire Safety NOC Expired",
+      "message": "Submitted safety clearance expired on 2025-12-31; intake increase requested without prerequisite NBA accreditation.",
+      "timestamp": "2026-10-25T08:30:00+05:30",
+      "dismissed": false
+    },
+    {
+      "id": "ALT-004",
+      "applicationId": "APP-2026-1045",
+      "applicationRef": "AICTE/SWR/2026/NEW-1045",
+      "institutionName": "Deccan College of Engineering & Technology",
+      "type": "unavailable_source",
+      "severity": "medium",
+      "title": "State Land Registry Gateway Timeout",
+      "message": "Bhoomi land database integration returned timeout during revenue record cross-validation. Gateway retry available.",
+      "timestamp": "2026-10-25T10:15:00+05:30",
+      "dismissed": false
+    },
+    {
+      "id": "ALT-005",
+      "applicationId": "APP-2026-1182",
+      "applicationRef": "AICTE/CR/2026/EOA-1182",
+      "institutionName": "Vindhya Rural Institute of Technology",
+      "type": "infrastructure_gap",
+      "severity": "high",
+      "title": "Blueprint Floor Area Deficient",
+      "message": "Institutional floor plan indicates 6,100 sq.m total built-up space versus mandated 7,500 sq.m norm for sanctioned intake.",
+      "timestamp": "2026-10-24T10:00:00+05:30",
+      "dismissed": false
+    }
+  ],
+  "benchmark": {
+    "extractionAccuracyPct": 94.6,
+    "validationAccuracyPct": 97.2,
+    "anomalyPrecisionPct": 91.8,
+    "anomalyRecallPct": 93.4,
+    "issuerSuccessRatePct": 86.5,
+    "avgVerificationTimeMs": 420,
+    "alertLatencyMs": 85,
+    "manualEffortReductionPct": 68.4,
+    "sampleSize": 250,
+    "testFixtureCount": 48,
+    "methodologyNote": "Synthetic test run executed against 250 seeded fixture records across 4 approval categories with controlled error injection and simulated issuer endpoints. Values are illustrative demo metrics.",
+    "lastRunTimestamp": "2026-10-25T08:00:00+05:30",
+    "categoryBreakdown": [
+      { "category": "EoA", "accuracy": 96.8, "casesTested": 120, "avgLatencyMs": 380 },
+      { "category": "Intake Change", "accuracy": 94.2, "casesTested": 60, "avgLatencyMs": 440 },
+      { "category": "New Programme", "accuracy": 93.5, "casesTested": 45, "avgLatencyMs": 490 },
+      { "category": "Institutional Change", "accuracy": 95.1, "casesTested": 25, "avgLatencyMs": 410 }
+    ]
+  },
+  "auditEvents": [
+    {
+      "id": "AUDIT-0001",
+      "timestamp": "2026-10-21T09:00:00+05:30",
+      "actorRole": "Administrator",
+      "actorName": "System Genesis",
+      "action": "system_bootstrap",
+      "applicationId": "GLOBAL",
+      "details": "Platform initialized with 8 baseline synthetic institutions and 8 active regulatory rules.",
+      "ruleIds": ["RULE-DOC-001", "RULE-DATE-002", "RULE-INST-003", "RULE-INTK-004", "RULE-TER-005", "RULE-XUSE-006", "RULE-ANOM-007", "RULE-INFRA-008"],
+      "sourceReferences": ["GENESIS-BLOCK-PRAMAN-2026"],
+      "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "eventHash": "c2b6f1082531da0ff10a8ef1b73e35dfc6b297b1029cbb443e0d8fa0993d56b4"
+    },
+    {
+      "id": "AUDIT-0002",
+      "timestamp": "2026-10-22T10:15:20+05:30",
+      "actorRole": "Officer",
+      "actorName": "Officer R. K. Sharma",
+      "action": "document_intake_validation",
+      "applicationId": "APP-2026-0811",
+      "details": "Automated OCR extraction and validation executed for Aryavart Institute of Advanced Technology EoA application.",
+      "ruleIds": ["RULE-DOC-001", "RULE-DATE-002"],
+      "sourceReferences": ["DOC-101-01", "DOC-101-02"],
+      "previousHash": "c2b6f1082531da0ff10a8ef1b73e35dfc6b297b1029cbb443e0d8fa0993d56b4",
+      "eventHash": "7f0931d9238994bb25298912d8a011bfecb53685e13550e2017df8a48b8a531e"
+    },
+    {
+      "id": "AUDIT-0003",
+      "timestamp": "2026-10-23T15:15:00+05:30",
+      "actorRole": "Reviewer",
+      "actorName": "Reviewer Sunita Sen",
+      "action": "anomaly_flag_escalation",
+      "applicationId": "APP-2026-1182",
+      "details": "Potential anomaly on Building Occupancy Certificate escalated to Senior Scrutiny Committee.",
+      "ruleIds": ["RULE-ANOM-007", "RULE-XUSE-006"],
+      "sourceReferences": ["DOC-104-01", "DOC-104-03"],
+      "previousHash": "7f0931d9238994bb25298912d8a011bfecb53685e13550e2017df8a48b8a531e",
+      "eventHash": "61a153835691d5cb0d6d45e54d8906353909772bf624b42bfae7e6005d548324"
+    },
+    {
+      "id": "AUDIT-0004",
+      "timestamp": "2026-10-24T18:10:00+05:30",
+      "actorRole": "Officer",
+      "actorName": "Officer P. V. Ramani",
+      "action": "issuer_gateway_check",
+      "applicationId": "APP-2026-1045",
+      "details": "Simulated query sent to Karnataka Bhoomi registry; gateway timeout recorded in verification log.",
+      "ruleIds": ["RULE-INST-003"],
+      "sourceReferences": ["DOC-103-01"],
+      "previousHash": "61a153835691d5cb0d6d45e54d8906353909772bf624b42bfae7e6005d548324",
+      "eventHash": "b8a8bdfa35756bc3e2840905187747e92380572b4f971239aa8fe7bfdd138d67"
+    }
+  ],
+  "infrastructureChecks": [
+    {
+      "id": "INF-101-01",
+      "applicationId": "APP-2026-0811",
+      "evidenceType": "photograph",
+      "title": "Computer Systems Lab 01",
+      "fileName": "cs_lab1_geotagged.jpg",
+      "timestamp": "2026-10-18T11:45:00+05:30",
+      "location": "26.8920 N, 80.9520 E (Sitapur Rd Campus)",
+      "hasGps": true,
+      "declaredValue": "65 Workstations",
+      "measuredValue": "65 Configured Terminals Detected",
+      "threshold": "Min 30 Workstations",
+      "result": "Pass",
+      "reason": "Geotag matches registered institutional boundary within 12 meters tolerance; laboratory equipment layout verified.",
+      "advisoryOutcome": "No discrepancy indicated"
+    },
+    {
+      "id": "INF-102-01",
+      "applicationId": "APP-2026-0924",
+      "evidenceType": "photograph",
+      "title": "Workshop Machine Shop - Lathe Section",
+      "fileName": "kalinga_workshop_lathes.jpg",
+      "timestamp": "2026-10-14T15:20:00+05:30",
+      "location": "Location GPS data missing from EXIF",
+      "hasGps": false,
+      "declaredValue": "15 Lathe Machines Installed",
+      "measuredValue": "Visual confirmation of 8 lathes",
+      "threshold": "Min 12 Lathe Units for 180 Intake",
+      "result": "Attention",
+      "reason": "Photograph lacks embedded geotag coordinates; visual machine count appears below requirement for additional division.",
+      "advisoryOutcome": "Needs additional evidence"
+    },
+    {
+      "id": "INF-103-01",
+      "applicationId": "APP-2026-1045",
+      "evidenceType": "floor_plan",
+      "title": "AI & Data Science High-Performance Computing Lab",
+      "fileName": "deccan_hpc_lab_plan.pdf",
+      "timestamp": "2026-10-20T10:00:00+05:30",
+      "location": "Campus Block C, 3rd Floor",
+      "hasGps": true,
+      "declaredValue": "180 Sq.M Carpet Area",
+      "measuredValue": "182 Sq.M from Blueprint Scale",
+      "threshold": "Min 150 Sq.M for PG/UG Advanced Lab",
+      "result": "Pass",
+      "reason": "Measured blueprint dimensions conform with required institutional space norms for advanced compute labs.",
+      "advisoryOutcome": "No discrepancy indicated"
+    },
+    {
+      "id": "INF-104-01",
+      "applicationId": "APP-2026-1182",
+      "evidenceType": "floor_plan",
+      "title": "Main Academic Complex Total Floor Space",
+      "fileName": "vindhya_reused_blueprint.pdf",
+      "timestamp": "2026-10-18T10:00:00+05:30",
+      "location": "Vindhya Rural Campus",
+      "hasGps": false,
+      "declaredValue": "11,200 Sq.M",
+      "measuredValue": "6,100 Sq.M (from original architect plan)",
+      "threshold": "Min 7,500 Sq.M for 240 Intake",
+      "result": "Mismatch",
+      "reason": "Actual blueprint floor measurements total 6,100 sq.m, failing the mandatory 7,500 sq.m requirement for existing approved programmes.",
+      "advisoryOutcome": "Recommend inspection"
+    }
+  ]
+}
