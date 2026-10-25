@@ -49,8 +49,8 @@ export default function BenchmarksPage() {
   return (
     <AppShell>
       <PageHeader
-        title="Synthetic Benchmark Metrics & Validation Analytics"
-        description="Controlled synthetic benchmark runs evaluating OCR extraction accuracy, rule fidelity, anomaly precision/recall, and latency across test fixtures."
+        title="Benchmark Performance"
+        description="Prototype accuracy, anomaly detection and latency across synthetic cases."
         breadcrumbs={[{ label: 'Benchmarks' }]}
         actions={
           <ThreeDButton

@@ -28,7 +28,7 @@ export function PageHeader({
 }: PageHeaderProps) {
   const desc = description || subtitle;
   return (
-    <div className="mb-6 space-y-2">
+    <div className="mb-6 space-y-3">
       {breadcrumbs && breadcrumbs.length > 0 && (
         <nav className="flex items-center gap-1.5 text-xs text-slate-400">
           <Link href="/" className="hover:text-slate-200 transition-colors">
@@ -52,22 +52,22 @@ export function PageHeader({
         </nav>
       )}
 
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
         <div>
           <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-bold tracking-tight text-white">
+            <h1 className="page-title">
               {title}
             </h1>
             {badge}
           </div>
           {desc && (
-            <p className="text-xs sm:text-sm text-slate-400 mt-1 max-w-3xl">
+            <p className="text-sm text-[#d7c0a2]/75 mt-2 max-w-3xl leading-6">
               {desc}
             </p>
           )}
         </div>
 
-        {actions && <div className="flex items-center gap-2.5 shrink-0">{actions}</div>}
+        {actions && <div className="flex flex-wrap items-center gap-3 lg:shrink-0">{actions}</div>}
       </div>
     </div>
   );

@@ -81,13 +81,13 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
   ];
 
   return (
-    <aside className="w-64 bg-[#0b2226]/90 backdrop-blur-xl border-r border-[#2d545e] flex flex-col h-full shrink-0">
+    <aside className="w-60 bg-[#0b2226]/90 backdrop-blur-xl border-r border-[#2d545e]/60 flex flex-col h-full shrink-0">
       {/* Brand Header */}
-      <div className="p-5 border-b border-slate-800/80 bg-slate-900/25">
+      <div className="p-5 border-b border-[#c89666]/20 bg-transparent">
         <Link href="/" className="block group">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20 border border-blue-400/30">
-              <ShieldCheck className="w-5 h-5 text-white" />
+            <div className="w-9 h-9 rounded-xl bg-[#e1b382] flex items-center justify-center shadow-lg shadow-black/20 border border-[#f3dec2]/40">
+              <ShieldCheck className="w-5 h-5 text-[#12343b]" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
@@ -104,13 +104,13 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
             </div>
           </div>
         </Link>
-        <p className="text-[10.5px] text-slate-500 mt-3 leading-snug line-clamp-2">
+        <p className="hidden">
           Platform for Regulatory Approval, Monitoring & Authentication Network
         </p>
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+      <nav className="flex-1 px-3 py-6 space-y-1.5 overflow-y-auto">
         <div className="px-3 pb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-500">
           Command Operations
         </div>
@@ -179,7 +179,7 @@ export function SidebarNav({ onItemClick }: SidebarNavProps) {
             Decision-Support Mode
           </span>
         </div>
-        <p className="text-[10px] text-slate-500 mt-1 leading-normal">
+        <p className="hidden">
           AI recommendations are strictly advisory. Competent officials retain final authority.
         </p>
       </div>

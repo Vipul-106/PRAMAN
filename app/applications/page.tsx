@@ -15,8 +15,8 @@ function ApplicationsContent() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Application Scrutiny Queue"
-        description="Filterable institutional application registry. Triage high-risk submissions, verify statutory documents, and examine findings."
+        title="Application Review"
+        description="Prioritize institutional submissions and open cases for scrutiny."
         breadcrumbs={[{ label: 'Applications' }]}
       />
 

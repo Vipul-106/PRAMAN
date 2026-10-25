@@ -25,7 +25,7 @@ export function RoleSwitcher({ currentRole, onRoleChange }: RoleSwitcherProps) {
   };
 
   return (
-    <div className="flex items-center gap-1.5 p-1 bg-slate-900/80 border border-slate-800 backdrop-blur-md rounded-lg">
+    <div className="flex items-center gap-1.5 p-1.5 bg-[#0b2226]/60 border border-[#c89666]/20 backdrop-blur-md rounded-full">
       <span className="text-[11px] font-medium text-slate-400 px-2 uppercase tracking-wider hidden sm:inline-block">
         Demo Role:
       </span>
@@ -54,7 +54,7 @@ export function RoleSwitcher({ currentRole, onRoleChange }: RoleSwitcherProps) {
 export function RoleBanner({ role }: { role: OfficerRole }) {
   const capability = ROLE_CAPABILITIES[role];
   return (
-    <div className="bg-slate-900/60 border border-white/5 px-4 py-2 rounded-lg flex items-center justify-between text-xs text-slate-300">
+    <div className="bg-transparent border-b border-[#c89666]/15 px-1 py-2 rounded-none flex items-center justify-between text-[11px] text-slate-300">
       <div className="flex items-center gap-2">
         <span className={`px-2 py-0.5 rounded text-[11px] font-semibold border ${capability.roleBadgeColor}`}>
           Active: {role}

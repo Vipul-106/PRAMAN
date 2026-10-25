@@ -12,8 +12,8 @@ export default function CompliancePage() {
   return (
     <AppShell>
       <PageHeader
-        title="Infrastructure & Evidence Compliance Screening"
-        description="Advisory documentary screening for campus geotagging, laboratory equipment density, and architectural floor-plan area norms."
+        title="Infrastructure Review"
+        description="Advisory review of campus evidence, facilities and site requirements."
         breadcrumbs={[{ label: 'Compliance Review' }]}
         badge={
           <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">

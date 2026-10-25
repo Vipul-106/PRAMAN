@@ -63,7 +63,7 @@ export function MetricCard({
 
   return (
     <div
-      className={`glass-card p-5 rounded-xl transition-all duration-200 ${styles.glow} ${className}`}
+      className={`metric-panel p-5 md:p-6 rounded-2xl transition-all duration-200 ${styles.glow} ${className}`}
     >
       <div className="flex items-start justify-between">
         <div className="space-y-1">
@@ -71,7 +71,7 @@ export function MetricCard({
             {title}
           </p>
           <div className="flex items-baseline gap-2">
-            <span className="text-2xl font-bold tracking-tight text-white">
+            <span className="text-3xl font-semibold tracking-tight text-[#f3dec2]">
               {value}
             </span>
           </div>
@@ -83,7 +83,7 @@ export function MetricCard({
 
       {(subtitle || actionLabel) && (
         <div className="mt-3 pt-3 border-t border-white/5 flex items-center justify-between text-xs">
-          {subtitle && <span className="text-slate-400">{subtitle}</span>}
+          {subtitle && <span className="text-xs tracking-wide text-[#d7c0a2]/65">{subtitle}</span>}
           {actionLabel && onAction && (
             <button
               onClick={onAction}

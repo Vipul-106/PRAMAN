@@ -49,15 +49,18 @@ export default function OverviewPage() {
 
   return (
     <AppShell>
+      <section className="command-hero">
       <PageHeader
         title="Regulatory Command Center"
-        description="Unified AICTE decision-support cockpit for automated intake verification, cross-registry validation, and tamper anomaly triage."
+        description="A live view of institutional applications, registry checks and advisory risks."
         badge={
-          <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
-            <AIOrbFace size={36} state="idle" colors={{ body: '#22d3ee', bodyEdge: '#cffafe', feature: '#083344' }} className="shrink-0" />
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Decision Engine Active
-          </span>
+          <div className="flex items-center gap-2">
+            <AIOrbFace size={110} state="idle" className="drop-shadow-[0_0_25px_rgba(225,179,130,0.3)]" />
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              Decision Engine Active
+            </span>
+          </div>
         }
         actions={
           <div className="flex items-center gap-2">
@@ -78,9 +81,10 @@ export default function OverviewPage() {
           </div>
         }
       />
+      </section>
 
       {/* Top Level Metric Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
         <MetricCard
           title="Applications in Queue"
           value={metrics.inQueue}
@@ -128,7 +132,7 @@ export default function OverviewPage() {
           <PriorityQueue applications={applications} />
 
           {/* Quick Workflow Action Banners */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link
               href="/intake"
               className="glass-card p-4 rounded-xl transition-all duration-200 border-l-2 border-l-blue-500/60 hover:border-l-blue-400 group block"
@@ -139,7 +143,7 @@ export default function OverviewPage() {
               </div>
               <h4 className="text-xs font-bold text-white">Smart Document Intake</h4>
               <p className="text-[11px] text-slate-400 mt-1">
-                OCR field extraction, bounding boxes, and before/after rectification diffs.
+                Extract fields and review rectifications.
               </p>
             </Link>
 
@@ -153,7 +157,7 @@ export default function OverviewPage() {
               </div>
               <h4 className="text-xs font-bold text-white">Issuer Verification Hub</h4>
               <p className="text-[11px] text-slate-400 mt-1">
-                Simulated state portals with outage retry recovery and manual routing.
+                Cross-check issuers and route exceptions.
               </p>
             </Link>
 
@@ -167,7 +171,7 @@ export default function OverviewPage() {
               </div>
               <h4 className="text-xs font-bold text-white">Rule Editor & Dry Run</h4>
               <p className="text-[11px] text-slate-400 mt-1">
-                Simulate regulatory parameter changes before applying to session.
+                Preview rule changes against active cases.
               </p>
             </Link>
           </div>

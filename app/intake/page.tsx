@@ -10,8 +10,8 @@ export default function IntakePage() {
     <AppShell>
       <div className="space-y-6">
         <PageHeader
-          title="Smart Document Intake & OCR Pipeline"
-          description="Category-based checklist generation, simulated document classification, OCR field extraction with confidence scores, and rectification."
+          title="Document Intake"
+          description="Extract, validate and review submitted documents."
           breadcrumbs={[{ label: 'Intake Pipeline' }]}
         />
 

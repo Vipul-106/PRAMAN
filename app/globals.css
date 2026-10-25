@@ -21,6 +21,26 @@
 
   --color-indigo-600: #e1b382;
   --color-indigo-500: #c89666;
+  --color-indigo-400: #e1b382;
+  --color-indigo-300: #e1b382;
+  --color-indigo-950: #1c3e45;
+
+  /* Sand Tan replaces secondary warm and violet accents throughout the UI. */
+  --color-amber-600: #c89666;
+  --color-amber-500: #c89666;
+  --color-amber-400: #e1b382;
+  --color-amber-300: #e1b382;
+  --color-amber-950: #1c3e45;
+  --color-violet-600: #c89666;
+  --color-violet-500: #c89666;
+  --color-violet-400: #e1b382;
+  --color-violet-300: #e1b382;
+  --color-violet-950: #1c3e45;
+  --color-purple-600: #c89666;
+  --color-purple-500: #c89666;
+  --color-purple-400: #e1b382;
+  --color-purple-300: #e1b382;
+  --color-purple-950: #1c3e45;
 }
 
 @layer base {
@@ -39,10 +59,123 @@
 
 /* Custom Glassmorphism Utility Classes */
 .glass-card {
-  background: rgba(28, 62, 69, 0.75) !important;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(45, 84, 94, 0.8) !important;
-  box-shadow: 0 8px 32px 0 rgba(11, 34, 38, 0.5);
+  background: linear-gradient(145deg, rgba(28, 62, 69, 0.82), rgba(18, 52, 59, 0.68)) !important;
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(200, 150, 102, 0.2) !important;
+  box-shadow: 0 18px 42px -28px rgba(3, 18, 21, 0.85);
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(225, 179, 130, 0.38) !important;
+  box-shadow: 0 22px 48px -30px rgba(3, 18, 21, 0.9);
+}
+
+.metric-panel {
+  position: relative;
+  background: linear-gradient(155deg, rgba(28, 62, 69, 0.76), rgba(11, 34, 38, 0.28));
+  border: 0;
+  border-top: 1px solid rgba(225, 179, 130, 0.46);
+  box-shadow: 0 20px 40px -34px rgba(3, 18, 21, 0.9);
+  transition: border-color 220ms ease, background 220ms ease;
+}
+
+.metric-panel:hover {
+  border-top-color: #e1b382;
+  background: linear-gradient(155deg, rgba(28, 62, 69, 0.96), rgba(11, 34, 38, 0.44));
+}
+
+.command-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 270px;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  border: 1px solid rgba(225, 179, 130, 0.26);
+  border-radius: 1.25rem 1.25rem 5rem 1.25rem;
+  background:
+    radial-gradient(ellipse at 18% 8%, rgba(58, 107, 119, 0.42), transparent 48%),
+    linear-gradient(112deg, rgba(11, 34, 38, 0.98) 0%, rgba(18, 52, 59, 0.96) 56%, rgba(18, 52, 59, 0.72) 100%);
+}
+
+.command-hero::before,
+.command-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  right: -8%;
+  bottom: -66%;
+  width: 64%;
+  height: 128%;
+  border-radius: 52% 48% 0 0;
+}
+
+.command-hero::before {
+  background: linear-gradient(155deg, rgba(236, 202, 160, 0.96), #c89666 74%);
+  transform: rotate(-8deg);
+}
+
+.command-hero::after {
+  right: 5%;
+  bottom: -76%;
+  width: 53%;
+  height: 116%;
+  background: linear-gradient(155deg, rgba(200, 150, 102, 0.94), #9b6b46 84%);
+  transform: rotate(5deg);
+}
+
+.command-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.command-hero .mb-6 {
+  margin-bottom: 0;
+}
+
+.command-hero h1,
+.editorial-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.command-hero h1 {
+  max-width: 15ch;
+  color: #f3dec2;
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  line-height: 0.98;
+}
+
+.command-hero p {
+  max-width: 42rem;
+  margin-top: 0.9rem;
+  color: rgba(232, 211, 185, 0.76);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.page-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #f3dec2;
+}
+
+@media (max-width: 640px) {
+  .command-hero {
+    min-height: 240px;
+    border-bottom-right-radius: 3rem;
+  }
+
+  .command-hero::before,
+  .command-hero::after {
+    right: -36%;
+    width: 90%;
+    opacity: 0.58;
+  }
 }
 
 .glass-input {

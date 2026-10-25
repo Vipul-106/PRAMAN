@@ -12,8 +12,8 @@ export default function RuleEditorPage() {
   return (
     <AppShell>
       <PageHeader
-        title="Regulatory Rule Configuration & Dry-Run Simulator"
-        description="Inspect active regulatory rules, simulate parameter alterations against the synthetic dataset, and review impact before session enforcement."
+        title="Rule Configuration"
+        description="Review policy thresholds and simulate changes before applying them."
         breadcrumbs={[{ label: 'Rule Editor' }]}
         badge={
           <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/30">

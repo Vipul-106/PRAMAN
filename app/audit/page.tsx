@@ -57,8 +57,8 @@ export default function AuditPage() {
   return (
     <AppShell>
       <PageHeader
-        title="Verifiable Cryptographic Audit Trail"
-        description="Append-only regulatory decision-support log secured by sequential SHA-256 block linking and tamper verification."
+        title="Audit Trail"
+        description="A verifiable record of scrutiny activity, linked by SHA-256 hashes."
         breadcrumbs={[{ label: 'Audit Trail' }]}
         badge={
           <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">

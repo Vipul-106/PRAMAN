@@ -47,7 +47,7 @@ export function AlertsStrip({ alerts }: AlertsStripProps) {
             Critical Triage Alerts ({alerts.length})
           </h3>
         </div>
-        <span className="text-[11px] text-slate-500">
+        <span className="hidden">
           Advisory indicators requiring officer scrutiny
         </span>
       </div>

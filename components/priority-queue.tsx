@@ -53,8 +53,8 @@ export function PriorityQueue({ applications, limit }: PriorityQueueProps) {
               Ranked by Risk Weight
             </span>
           </h3>
-          <p className="text-xs text-slate-400 mt-0.5">
-            Automated triage ranking to assist officer review. Triage score is advisory, not an automated judgment.
+          <p className="text-xs text-slate-400 mt-1">
+            Ranked by advisory risk score for officer review.
           </p>
         </div>
         <Link

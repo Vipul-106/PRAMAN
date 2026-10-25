@@ -48,16 +48,18 @@ export function AppShell({ children }: AppShellProps) {
         />
 
         {/* Dynamic Role Capability Banner */}
-        <div className="px-4 md:px-6 py-2 bg-slate-900/30 border-b border-slate-800/70">
+        <div className="px-5 md:px-10 py-2 bg-slate-900/30 border-b border-slate-800/70">
           <RoleBanner role={currentRole} />
         </div>
 
         {/* Scrollable Main Viewport */}
-        <main className="flex-1 overflow-y-auto px-4 md:px-6 py-6 space-y-6 bg-[radial-gradient(ellipse_at_top,_rgba(30,64,175,0.08),_transparent_48%)]">
-          {children}
+        <main className="flex-1 overflow-y-auto px-5 md:px-10 py-7 md:py-10 space-y-8 bg-[radial-gradient(ellipse_at_top,_rgba(200,150,102,0.08),_transparent_48%)]">
+          <div className="mx-auto w-full max-w-[1500px] space-y-8">
+            {children}
+          </div>
 
           {/* Persistent Statutory Decision-Support Disclaimer Footer */}
-          <footer className="mt-12 pt-6 pb-6 border-t border-slate-800/80 text-slate-400 text-xs space-y-2">
+          <footer className="mx-auto w-full max-w-[1500px] mt-0 pt-6 pb-6 border-t border-slate-800/80 text-slate-400 text-xs space-y-2">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-blue-400 shrink-0" />
