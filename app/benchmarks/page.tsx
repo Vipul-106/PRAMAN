@@ -11,28 +11,37 @@ import {
   Play,
   CheckCircle2,
   Cpu,
-  Clock,
   ShieldCheck,
   TrendingDown,
   Info,
 } from 'lucide-react';
 
+import { useSession } from '@/lib/session-context';
+
 export default function BenchmarksPage() {
   const [metrics, setMetrics] = useState<BenchmarkMetrics>(getBenchmarkMetrics());
   const [isRunning, setIsRunning] = useState(false);
   const [lastRunSuccess, setLastRunSuccess] = useState(false);
+  const { addAuditEvent } = useSession();
 
   const handleRunBenchmark = () => {
     setIsRunning(true);
     setLastRunSuccess(false);
 
-    setTimeout(() => {
+    setTimeout(async () => {
+      const timestamp = new Date().toISOString();
       setMetrics((prev) => ({
         ...prev,
-        lastRunTimestamp: new Date().toISOString(),
+        lastRunTimestamp: timestamp,
       }));
       setIsRunning(false);
       setLastRunSuccess(true);
+
+      await addAuditEvent({
+        action: 'SYNTHETIC_BENCHMARK_EXECUTION',
+        applicationId: 'BENCHMARK-RUN',
+        details: `Executed deterministic synthetic benchmark batch on 8 test fixtures. Field extraction accuracy: ${(metrics.extractionAccuracyPct * 100).toFixed(1)}%, Rule fidelity: ${(metrics.validationAccuracyPct * 100).toFixed(1)}%.`,
+      });
     }, 800);
   };
 

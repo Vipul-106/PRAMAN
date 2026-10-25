@@ -10,7 +10,6 @@ import {
   Bell,
   Menu,
   Database,
-  ExternalLink,
 } from 'lucide-react';
 import { mockDatabase } from '@/lib/mock-data';
 

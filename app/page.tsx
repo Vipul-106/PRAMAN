@@ -10,9 +10,7 @@ import { PriorityQueue } from '@/components/priority-queue';
 import { StatusBadge } from '@/components/status-badge';
 import {
   getCommandCenterMetrics,
-  getApplications,
   getSystemAlerts,
-  getAuditEvents,
 } from '@/lib/mock-data';
 import { formatDateTime, truncateHash } from '@/lib/format';
 import {
@@ -29,12 +27,13 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import { VerificationStatus } from '@/lib/types';
+import { useSession } from '@/lib/session-context';
 
 export default function OverviewPage() {
+  const { applications, auditEvents } = useSession();
   const metrics = getCommandCenterMetrics();
-  const applications = getApplications();
   const alerts = getSystemAlerts();
-  const recentAuditEvents = getAuditEvents().slice(-5).reverse();
+  const recentAuditEvents = auditEvents.slice(-5).reverse();
 
   const statusList: { key: VerificationStatus; label: string; count: number }[] = [
     { key: 'verified', label: 'Verified', count: metrics.statusDistribution.verified },

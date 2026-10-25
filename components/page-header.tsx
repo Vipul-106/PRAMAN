@@ -12,6 +12,7 @@ interface BreadcrumbItem {
 interface PageHeaderProps {
   title: string;
   description?: string;
+  subtitle?: string;
   breadcrumbs?: BreadcrumbItem[];
   actions?: React.ReactNode;
   badge?: React.ReactNode;
@@ -20,10 +21,12 @@ interface PageHeaderProps {
 export function PageHeader({
   title,
   description,
+  subtitle,
   breadcrumbs,
   actions,
   badge,
 }: PageHeaderProps) {
+  const desc = description || subtitle;
   return (
     <div className="mb-6 space-y-2">
       {breadcrumbs && breadcrumbs.length > 0 && (
@@ -57,9 +60,9 @@ export function PageHeader({
             </h1>
             {badge}
           </div>
-          {description && (
+          {desc && (
             <p className="text-xs sm:text-sm text-slate-400 mt-1 max-w-3xl">
-              {description}
+              {desc}
             </p>
           )}
         </div>

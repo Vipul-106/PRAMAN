@@ -3,30 +3,32 @@
 import React, { useState } from 'react';
 import { AppShell } from '@/components/app-shell';
 import { PageHeader } from '@/components/page-header';
-import { getAuditEvents } from '@/lib/mock-data';
+import { AuditTrailDrawer } from '@/components/audit-trail-drawer';
 import { AuditEvent } from '@/lib/types';
 import { verifyAuditChain, ChainVerificationResult } from '@/lib/audit';
-import { formatDateTime, truncateHash } from '@/lib/format';
+import { formatDateTime } from '@/lib/format';
+import { useSession } from '@/lib/session-context';
 import {
-  History,
   ShieldCheck,
   ShieldAlert,
   Search,
   CheckCircle2,
   Lock,
-  ArrowRight,
   Info,
   RotateCcw,
+  Eye,
 } from 'lucide-react';
 
 export default function AuditPage() {
-  const [events, setEvents] = useState<AuditEvent[]>(getAuditEvents());
+  const { auditEvents, simulateTamper, resetAuditChain } = useSession();
+  const [selectedEvent, setSelectedEvent] = useState<AuditEvent | null>(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [verificationResult, setVerificationResult] = useState<ChainVerificationResult | null>(null);
   const [isVerifying, setIsVerifying] = useState(false);
   const [search, setSearch] = useState('');
   const [selectedRole, setSelectedRole] = useState<string>('ALL');
 
-  const filteredEvents = events.filter((e) => {
+  const filteredEvents = auditEvents.filter((e) => {
     if (selectedRole !== 'ALL' && e.actorRole !== selectedRole) return false;
     if (search.trim()) {
       const q = search.toLowerCase();
@@ -41,26 +43,14 @@ export default function AuditPage() {
 
   const handleVerifyChain = async () => {
     setIsVerifying(true);
-    const result = await verifyAuditChain(events);
+    const result = await verifyAuditChain(auditEvents);
     setIsVerifying(false);
     setVerificationResult(result);
   };
 
-  const handleSimulateTamper = () => {
-    if (events.length > 2) {
-      const tampered = [...events];
-      tampered[2] = {
-        ...tampered[2],
-        details: 'TAMPERED IN DEMO: Institutional record modified without authorization.',
-      };
-      setEvents(tampered);
-      setVerificationResult(null);
-    }
-  };
-
-  const handleResetAudit = () => {
-    setEvents(getAuditEvents());
-    setVerificationResult(null);
+  const handleOpenEvent = (event: AuditEvent) => {
+    setSelectedEvent(event);
+    setIsDrawerOpen(true);
   };
 
   return (
@@ -86,47 +76,63 @@ export default function AuditPage() {
               <span>{isVerifying ? 'Verifying Hashes...' : 'Verify Chain Integrity'}</span>
             </button>
             <button
-              onClick={handleSimulateTamper}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-rose-950/40 hover:bg-rose-900/60 text-rose-300 border border-rose-500/30 text-xs font-semibold transition-all"
+              onClick={() => {
+                simulateTamper();
+                setVerificationResult(null);
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-rose-950/40 hover:bg-rose-900/60 text-rose-300 border border-rose-500/30 text-xs font-semibold transition-all"
               title="Demonstrates detection of unauthorized payload modification"
             >
               <ShieldAlert className="w-3.5 h-3.5" />
               <span>Simulate Tamper Test</span>
             </button>
             <button
-              onClick={handleResetAudit}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-white/10 text-xs font-semibold transition-all"
+              onClick={() => {
+                resetAuditChain();
+                setVerificationResult(null);
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-white/10 text-xs font-semibold transition-all"
             >
               <RotateCcw className="w-3.5 h-3.5" />
-              <span>Reset</span>
+              <span>Reset Chain</span>
             </button>
           </div>
         }
       />
 
-      {/* Verification Result Banner */}
+      {/* Notice */}
+      <div className="p-4 rounded-xl bg-slate-900/80 border border-white/10 flex items-start gap-3 text-xs text-slate-300">
+        <Info className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+        <div>
+          <span className="font-semibold text-white">IMMUTABLE BLOCK CHAINING:</span> Every officer action,
+          rule dry run, and issuer query is cryptographically appended using sequential SHA-256 hashing.
+          Modifying any previous block breaks pointer hashes and fails verification.
+        </div>
+      </div>
+
+      {/* Verification Status Banner */}
       {verificationResult && (
         <div
-          className={`p-4 rounded-xl border flex items-start gap-3 transition-all ${
+          className={`p-4 rounded-xl border flex items-center gap-3 text-xs transition-all ${
             verificationResult.passed
-              ? 'bg-emerald-950/40 border-emerald-500/30 text-emerald-300'
-              : 'bg-rose-950/40 border-rose-500/30 text-rose-300'
+              ? 'bg-emerald-950/40 border-emerald-500/40 text-emerald-300'
+              : 'bg-rose-950/40 border-rose-500/40 text-rose-300'
           }`}
         >
           {verificationResult.passed ? (
-            <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+            <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
           ) : (
-            <ShieldAlert className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
+            <ShieldAlert className="w-6 h-6 text-rose-400 shrink-0" />
           )}
-          <div className="space-y-1">
-            <h4 className="text-xs font-bold uppercase tracking-wider">
+          <div className="space-y-0.5">
+            <span className="font-bold text-sm block">
               {verificationResult.passed
-                ? 'Integrity Check Passed (Local Demo Chain)'
-                : 'Integrity Violation Detected'}
-            </h4>
-            <p className="text-xs">
+                ? 'Integrity check passed (local demo chain)'
+                : 'Cryptographic Tampering Detected!'}
+            </span>
+            <p className="text-xs opacity-90">
               {verificationResult.passed
-                ? `Successfully verified all ${verificationResult.eventsChecked} consecutive audit blocks. Sequence continuity and recomputed SHA-256 hashes match recorded signatures.`
+                ? `Successfully verified ${verificationResult.eventsChecked} sequential blocks. All previous-hash pointers and SHA-256 payload digests match expected values.`
                 : `Tampering detected at event block ${verificationResult.failedEventId}: ${verificationResult.failureReason}`}
             </p>
           </div>
@@ -166,7 +172,8 @@ export default function AuditPage() {
         {filteredEvents.map((event, index) => (
           <div
             key={event.id}
-            className="gov-card p-4 rounded-xl border border-white/10 space-y-2 hover:border-white/20 transition-all text-xs"
+            onClick={() => handleOpenEvent(event)}
+            className="gov-card p-4 rounded-xl border border-white/10 space-y-2 hover:border-blue-500/50 hover:bg-slate-900/90 transition-all text-xs cursor-pointer group"
           >
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div className="flex items-center gap-2">
@@ -180,12 +187,18 @@ export default function AuditPage() {
                   {event.actorRole}
                 </span>
               </div>
-              <span className="text-slate-400 text-[11px] font-mono">
-                {formatDateTime(event.timestamp)}
-              </span>
+              <div className="flex items-center gap-3">
+                <span className="text-slate-400 text-[11px] font-mono">
+                  {formatDateTime(event.timestamp)}
+                </span>
+                <span className="text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 font-semibold text-[11px]">
+                  <Eye className="w-3.5 h-3.5" />
+                  <span>Inspect</span>
+                </span>
+              </div>
             </div>
 
-            <p className="text-slate-200">{event.details}</p>
+            <p className="text-slate-200 leading-relaxed">{event.details}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2.5 rounded-lg bg-slate-950/60 border border-white/5 font-mono text-[10.5px]">
               <div className="truncate">
@@ -205,6 +218,13 @@ export default function AuditPage() {
           </div>
         ))}
       </div>
+
+      {/* Drawer */}
+      <AuditTrailDrawer
+        event={selectedEvent}
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+      />
     </AppShell>
   );
 }

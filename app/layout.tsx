@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "Platform for Regulatory Approval, Monitoring & Authentication Network | AICTE Decision-Support Prototype",
 };
 
+import { SessionProvider } from "@/lib/session-context";
+
 export default function RootLayout({
   children,
 }: {
@@ -27,7 +29,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100">{children}</body>
+      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100">
+        <SessionProvider>{children}</SessionProvider>
+      </body>
     </html>
   );
 }

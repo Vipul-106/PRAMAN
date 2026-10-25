@@ -1,18 +1,19 @@
 'use client';
 
 import React, { useState } from 'react';
-import { OfficerRole } from '@/lib/types';
 import { SidebarNav } from './sidebar-nav';
 import { TopBar } from './top-bar';
 import { RoleBanner } from './role-switcher';
 import { ShieldCheck, Info } from 'lucide-react';
+
+import { useSession } from '@/lib/session-context';
 
 interface AppShellProps {
   children: React.ReactNode;
 }
 
 export function AppShell({ children }: AppShellProps) {
-  const [currentRole, setCurrentRole] = useState<OfficerRole>('Officer');
+  const { currentRole, setCurrentRole } = useSession();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (

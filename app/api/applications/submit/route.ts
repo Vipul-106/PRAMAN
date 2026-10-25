@@ -3,7 +3,7 @@
 // NOTE: Synthetic demo adapter. No production authentication or external services contacted.
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getInstitutionById, mockDatabase } from '@/lib/mock-data';
+import { getInstitutionById } from '@/lib/mock-data';
 import { ApplicationCategory, ApplicationRecord, DocumentRecord } from '@/lib/types';
 import { getCategoryChecklist, validateApplication } from '@/lib/validation-engine';
 
