@@ -55,7 +55,7 @@ export default function OverviewPage() {
         description="A live view of institutional applications, registry checks and advisory risks."
         badge={
           <div className="flex items-center gap-2">
-            <AIOrbFace size={110} state="idle" expression={{ left: { h: 1.2, w: 1.2, dy: -1 }, right: { h: 1.2, w: 1.2, dy: -1 } }} colors={{ body: '#ff91b2', bodyEdge: '#fff0d7', feature: '#48283a' }} className="drop-shadow-[0_0_28px_rgba(255,145,178,0.5)]" />
+            <AIOrbFace size={110} state="idle" expression={{ left: { h: 1.2, w: 1.2, dy: -1 }, right: { h: 1.2, w: 1.2, dy: -1 } }} colors={{ body: '#c89666', bodyEdge: '#e1b382', feature: '#12343b' }} className="overview-orb-glow" />
             <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Decision Engine Active

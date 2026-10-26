@@ -116,6 +116,16 @@
   background: rgba(120, 35, 53, 0.92);
 }
 
+.overview-orb-glow::after {
+  position: absolute;
+  inset: 2%;
+  border: 1.5px solid rgba(255, 223, 181, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(245, 208, 166, 0.36), 0 0 22px rgba(225, 179, 130, 0.2);
+  content: "";
+  pointer-events: none;
+}
+
 .metric-panel {
   position: relative;
   background: linear-gradient(155deg, rgba(28, 62, 69, 0.76), rgba(11, 34, 38, 0.28));
