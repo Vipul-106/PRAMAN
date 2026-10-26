@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 import { SessionProvider } from "@/lib/session-context";
 import { PrismGradient } from "@/components/ui/prism-gradient";
-import { CursorTrail } from "@/components/ui/cursor-trail";
+import CanvasCursor from "@/components/ui/canvas-cursor";
 
 export default function RootLayout({
   children,
@@ -33,7 +33,7 @@ export default function RootLayout({
     >
       <body className="relative min-h-full flex flex-col bg-slate-950 text-slate-100">
         <PrismGradient speed={0.25} noise={{ opacity: 0.1 }} className="fixed inset-0 z-0 opacity-40 pointer-events-none" />
-        <CursorTrail color="bg-[#e1b382]" count={6} size={8} />
+        <CanvasCursor />
         <SessionProvider>{children}</SessionProvider>
       </body>
     </html>
