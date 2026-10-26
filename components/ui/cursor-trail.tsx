@@ -1,106 +1,96 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import { motion, useSpring } from 'framer-motion';
+import * as React from "react";
+import { motion, useSpring } from "motion/react";
+import { useMouse } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface CursorTrailProps {
   color?: string;
-  size?: number;
   count?: number;
-}
-
-export function CursorTrail({
-  color = 'bg-cyan-400',
-  size = 8,
-  count = 6,
-}: CursorTrailProps) {
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setCoords({ x: e.clientX, y: e.clientY });
-      if (!isVisible) setIsVisible(true);
-    };
-
-    const handleMouseLeave = () => {
-      setIsVisible(false);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove, { passive: true });
-    document.addEventListener('mouseleave', handleMouseLeave);
-    
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, [isVisible]);
-
-  return (
-    <>
-      {isVisible && Array.from({ length: count }).map((_, index) => {
-        const springConfig = {
-          stiffness: 300 - index * 30,
-          damping: 25 + index * 2,
-          mass: 0.2 + index * 0.1,
-        };
-
-        return (
-          <TrailDot
-            key={index}
-            index={index}
-            coords={coords}
-            springConfig={springConfig}
-            size={size}
-            color={color}
-            count={count}
-          />
-        );
-      })}
-    </>
-  );
-}
-
-interface TrailDotProps {
-  index: number;
-  coords: { x: number; y: number };
-  springConfig: { stiffness: number; damping: number; mass: number };
-  size: number;
-  color: string;
-  count: number;
+  size?: number;
+  className?: string;
 }
 
 function TrailDot({
+  mouse,
   index,
-  coords,
-  springConfig,
-  size,
+  total,
   color,
-  count,
-}: TrailDotProps) {
-  const x = useSpring(coords.x, springConfig);
-  const y = useSpring(coords.y, springConfig);
+  size,
+}: {
+  mouse: { x: number | null; y: number | null };
+  index: number;
+  total: number;
+  color: string;
+  size: number;
+}) {
+  const springOptions = {
+    stiffness: 400 - index * 30,
+    damping: 28 + index * 3,
+    mass: 0.2 + index * 0.1,
+  };
 
-  useEffect(() => {
-    x.set(coords.x);
-    y.set(coords.y);
-  }, [coords, x, y]);
+  const springX = useSpring(0, springOptions);
+  const springY = useSpring(0, springOptions);
 
-  const dotSize = size * (1 - index / count);
-  const opacity = 1 - index / count;
+  React.useEffect(() => {
+    if (mouse.x !== null && mouse.y !== null) {
+      springX.set(mouse.x);
+      springY.set(mouse.y);
+    }
+  }, [mouse.x, mouse.y, springX, springY]);
+
+  const scale = 1 - (index / total) * 0.6;
+  const opacity = 1 - (index / total) * 0.75;
+  const dotSize = size * scale;
 
   return (
     <motion.div
       style={{
-        x,
-        y,
+        x: springX,
+        y: springY,
         width: dotSize,
         height: dotSize,
-        translateX: '-50%',
-        translateY: '-50%',
-        opacity,
       }}
-      className={`fixed top-0 left-0 rounded-full pointer-events-none z-[9999] ${color}`}
+      className={cn(
+        "pointer-events-none fixed left-0 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full",
+        color,
+      )}
+      initial={{ opacity: 0 }}
+      animate={{ opacity }}
+      transition={{ duration: 0.15 }}
     />
   );
 }
+
+export function CursorTrail({
+  color = "bg-[#e1b382]",
+  count = 6,
+  size = 8,
+  className,
+}: CursorTrailProps) {
+  const [mouse, containerRef] = useMouse();
+
+  if (mouse.x === null || mouse.y === null) return null;
+
+  return (
+    <div
+      ref={containerRef}
+      className={cn("pointer-events-none fixed inset-0 z-50 overflow-hidden", className)}
+    >
+      {Array.from({ length: count }).map((_, i) => (
+        <TrailDot
+          key={i}
+          mouse={mouse}
+          index={i}
+          total={count}
+          color={color}
+          size={size}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default CursorTrail;
