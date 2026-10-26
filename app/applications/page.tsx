@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { AppShell } from '@/components/app-shell';
 import { PageHeader } from '@/components/page-header';
 import { ApplicationTable } from '@/components/application-table';
+import AIOrbFace from '@/components/ui/ai-orb-face';
 import { useSession } from '@/lib/session-context';
 
 function ApplicationsContent() {
@@ -18,6 +19,7 @@ function ApplicationsContent() {
         title="Application Review"
         description="Prioritize institutional submissions and open cases for scrutiny."
         breadcrumbs={[{ label: 'Applications' }]}
+        badge={<AIOrbFace size={100} state="idle" expression={{ left: { h: 0.58, w: 1.4 }, right: { h: 0.58, w: 1.4 } }} colors={{ body: '#a78bfa', bodyEdge: '#ede9fe', feature: '#2e1065' }} className="drop-shadow-[0_0_24px_rgba(167,139,250,0.35)]" />}
       />
 
       <ApplicationTable applications={applications} initialSearch={initialSearch} />

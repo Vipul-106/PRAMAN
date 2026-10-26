@@ -55,7 +55,7 @@ export default function OverviewPage() {
         description="A live view of institutional applications, registry checks and advisory risks."
         badge={
           <div className="flex items-center gap-2">
-            <AIOrbFace size={110} state="idle" className="drop-shadow-[0_0_25px_rgba(225,179,130,0.3)]" />
+            <AIOrbFace size={110} state="idle" expression={{ left: { h: 1.2, w: 1.2, dy: -1 }, right: { h: 1.2, w: 1.2, dy: -1 } }} colors={{ body: '#ff91b2', bodyEdge: '#fff0d7', feature: '#48283a' }} className="drop-shadow-[0_0_28px_rgba(255,145,178,0.5)]" />
             <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               Decision Engine Active
@@ -66,14 +66,14 @@ export default function OverviewPage() {
           <div className="flex items-center gap-2">
             <Link
               href="/intake"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#e1b382] text-[#12343b] hover:bg-[#c89666] text-xs font-semibold shadow-lg shadow-black/20 transition-colors"
+              className="action-primary inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all"
             >
               <FileCheck2 className="w-3.5 h-3.5" />
               <span>Smart Intake</span>
             </Link>
             <Link
               href="/benchmarks"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700/80 transition-colors"
+              className="action-secondary inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold transition-all"
             >
               <Activity className="w-3.5 h-3.5" />
               <span>Benchmarks</span>

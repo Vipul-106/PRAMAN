@@ -18,6 +18,7 @@ import {
 
 import { useSession } from '@/lib/session-context';
 import { ThreeDButton } from '@/components/ui/three-d-button';
+import AIOrbFace from '@/components/ui/ai-orb-face';
 
 export default function BenchmarksPage() {
   const [metrics, setMetrics] = useState<BenchmarkMetrics>(getBenchmarkMetrics());
@@ -52,11 +53,12 @@ export default function BenchmarksPage() {
         title="Benchmark Performance"
         description="Prototype accuracy, anomaly detection and latency across synthetic cases."
         breadcrumbs={[{ label: 'Benchmarks' }]}
+        badge={<AIOrbFace size={105} state="done" expression="wink" colors={{ body: '#4ade80', bodyEdge: '#dcfce7', feature: '#14532d' }} className="drop-shadow-[0_0_26px_rgba(74,222,128,0.35)]" />}
         actions={
           <ThreeDButton
             onClick={handleRunBenchmark}
             disabled={isRunning}
-            className="min-w-0 text-xs px-4 py-1.5 gap-1.5 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
+            className="min-w-0 text-xs px-4 py-2 gap-1.5 action-primary"
           >
             <Play className={`w-3.5 h-3.5 ${isRunning ? 'animate-spin' : ''}`} />
             <span>{isRunning ? 'Executing Test Batch...' : 'Run Synthetic Benchmark'}</span>

@@ -19,6 +19,7 @@ import {
   Eye,
 } from 'lucide-react';
 import { ThreeDButton } from '@/components/ui/three-d-button';
+import AIOrbFace from '@/components/ui/ai-orb-face';
 
 export default function AuditPage() {
   const { auditEvents, simulateTamper, resetAuditChain } = useSession();
@@ -61,17 +62,20 @@ export default function AuditPage() {
         description="A verifiable record of scrutiny activity, linked by SHA-256 hashes."
         breadcrumbs={[{ label: 'Audit Trail' }]}
         badge={
-          <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
-            <Lock className="w-3.5 h-3.5" />
-            SHA-256 Hash Chained
-          </span>
+          <div className="flex items-center gap-2">
+            <AIOrbFace size={100} state="idle" expression="deadpan" colors={{ body: '#c084fc', bodyEdge: '#f3e8ff', feature: '#3b0764' }} className="drop-shadow-[0_0_24px_rgba(192,132,252,0.35)]" />
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+              <Lock className="w-3.5 h-3.5" />
+              SHA-256 Hash Chained
+            </span>
+          </div>
         }
         actions={
           <div className="flex items-center gap-2">
             <ThreeDButton
               onClick={handleVerifyChain}
               disabled={isVerifying}
-              className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
+              className="min-w-0 text-xs px-3 py-1.5 gap-1.5 action-primary"
             >
               <ShieldCheck className={`w-3.5 h-3.5 ${isVerifying ? 'animate-spin' : ''}`} />
               <span>{isVerifying ? 'Verifying Hashes...' : 'Verify Chain Integrity'}</span>
@@ -81,7 +85,7 @@ export default function AuditPage() {
                 simulateTamper();
                 setVerificationResult(null);
               }}
-              className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-rose-900/80 text-rose-100 dark:bg-rose-900/80 dark:text-rose-100"
+              className="min-w-0 text-xs px-3 py-1.5 gap-1.5 action-danger"
               title="Demonstrates detection of unauthorized payload modification"
             >
               <ShieldAlert className="w-3.5 h-3.5" />
@@ -92,7 +96,7 @@ export default function AuditPage() {
                 resetAuditChain();
                 setVerificationResult(null);
               }}
-              className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-slate-800 text-slate-200 dark:bg-slate-800 dark:text-slate-200"
+              className="min-w-0 text-xs px-3 py-1.5 gap-1.5 action-secondary"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Reset Chain</span>

@@ -27,11 +27,9 @@ export function ThreeDButton({
       whileHover="hover"
       whileTap="tap"
       className={cn(
-        "group relative isolate inline-flex min-w-38 cursor-pointer rounded-full pb-1.5 outline-none",
-        "focus-visible:ring-2 focus-visible:ring-zinc-500 focus-visible:ring-offset-2",
-        "dark:focus-visible:ring-white",
+        "group relative isolate inline-flex cursor-pointer rounded-xl pb-1.5 outline-none",
+        "focus-visible:ring-2 focus-visible:ring-[#e1b382] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b2226]",
         "disabled:pointer-events-none disabled:opacity-50",
-        className,
       )}
       {...props}
     >
@@ -44,7 +42,7 @@ export function ThreeDButton({
           tap: { y: -1 },
         }}
         transition={pressTransition}
-        className="absolute inset-x-0 bottom-0 top-1.5 -z-10 rounded-full bg-zinc-950 shadow-[0_10px_18px_rgba(24,24,27,0.2)] dark:bg-white dark:shadow-[0_10px_18px_rgba(255,255,255,0.15)]"
+        className="absolute inset-x-0 bottom-0 top-1.5 -z-10 rounded-xl bg-[#081a1d] shadow-[0_8px_16px_rgba(3,18,21,0.38)]"
       />
       {/* Face (top layer / button surface) */}
       <motion.span
@@ -55,10 +53,7 @@ export function ThreeDButton({
         }}
         transition={pressTransition}
         className={cn(
-          "relative z-10 inline-flex w-full items-center justify-center overflow-hidden rounded-full px-7 py-3",
-          "bg-zinc-50 text-sm font-semibold text-zinc-950 dark:bg-zinc-900 dark:text-white",
-          "shadow-[inset_0_0_0_1px_rgb(212_212_216),inset_0_2px_0_rgba(255,255,255,0.9),inset_0_-2px_0_rgba(24,24,27,0.06)]",
-          "dark:shadow-[inset_0_0_0_1px_rgb(255_255_255),inset_0_2px_0_rgba(255,255,255,0.15),inset_0_-2px_0_rgba(0,0,0,0.3)]",
+          "relative z-10 inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl border border-[#f3dec2]/35 bg-[#e1b382] px-5 py-2.5 text-sm font-semibold text-[#12343b] shadow-[inset_0_1px_0_rgba(255,255,255,0.38),0_6px_16px_rgba(3,18,21,0.18)] transition-[background,box-shadow] hover:bg-[#edc79d] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.48),0_8px_20px_rgba(3,18,21,0.24)]",
           "backface-hidden will-change-transform",
           className,
         )}

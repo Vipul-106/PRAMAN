@@ -108,7 +108,7 @@ export function RuleEditor({ currentRole }: RuleEditorProps) {
           <ThreeDButton
             onClick={handleExecuteDryRun}
             disabled={isDryRunning}
-            className="min-w-0 text-xs px-3 py-1 gap-1.5 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
+            className="min-w-0 text-xs px-3 py-1.5 gap-1.5 action-primary"
           >
             <Play className={`w-3.5 h-3.5 ${isDryRunning ? 'animate-spin' : ''}`} />
             <span>Execute Dry Run</span>
@@ -118,7 +118,7 @@ export function RuleEditor({ currentRole }: RuleEditorProps) {
             <>
               <button
                 onClick={handleApplyToSession}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-sm transition-all"
+                className="action-primary inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold"
               >
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Apply to Session</span>
@@ -126,7 +126,7 @@ export function RuleEditor({ currentRole }: RuleEditorProps) {
 
               <button
                 onClick={handleResetToBaseline}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium border border-white/10 transition-colors"
+                className="action-secondary inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-medium"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Reset Defaults</span>

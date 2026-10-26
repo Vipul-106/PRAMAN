@@ -308,11 +308,11 @@ export function IntakePipeline() {
                 Local in-memory file simulation. OCR field extraction with confidence parsing.
               </CardDescription>
             </div>
-            <AIOrbFace size={120} state={isProcessing ? "thinking" : "done"} colors={{ body: '#22d3ee', bodyEdge: '#cffafe', feature: '#083344' }} className="shrink-0 drop-shadow-[0_0_30px_rgba(225,179,130,0.4)]" />
+            <AIOrbFace size={120} state={isProcessing ? "thinking" : "done"} expression={isProcessing ? "focused" : "content"} colors={{ body: '#34d399', bodyEdge: '#d1fae5', feature: '#064e3b' }} className="shrink-0 drop-shadow-[0_0_30px_rgba(52,211,153,0.35)]" />
             <ThreeDButton
               onClick={handleLoadSamplePack}
               disabled={isProcessing}
-              className="min-w-0 text-xs px-4 py-1.5 gap-2 bg-blue-600 text-white dark:bg-blue-600 dark:text-white"
+              className="min-w-0 text-xs px-4 py-2 gap-2 action-primary"
             >
               {isProcessing ? (
                 <RefreshCw className="h-3.5 w-3.5 animate-spin" />
